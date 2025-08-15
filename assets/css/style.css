@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
+ * copyright 2025 ttt company inc.
  */
 
 
@@ -173,7 +173,7 @@ body {
   padding: 12px 35px;
   font-size: var(--fs-8);
   font-weight: var(--fw-500);
-  border-radius: 0 25px;
+  border-radius: 25px 25px;
   transition: var(--transition-2);
 }
 
