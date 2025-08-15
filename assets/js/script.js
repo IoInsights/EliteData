@@ -14,10 +14,10 @@ const overlay = document.querySelector("[data-overlay]");
 const elemArr = [navCloseBtn, overlay, navOpenBtn];
 
 for (let i = 0; i < elemArr.length; i++) {
-  elemArr[i].addEventListener("click", function () {
-    navbar.classList.toggle("active");
-    overlay.classList.toggle("active");
-  });
+    elemArr[i].addEventListener("click", function() {
+        navbar.classList.toggle("active");
+        overlay.classList.toggle("active");
+    });
 }
 
 /**
@@ -27,10 +27,10 @@ for (let i = 0; i < elemArr.length; i++) {
 const navbarLinks = document.querySelectorAll("[data-navbar-link]");
 
 for (let i = 0; i < navbarLinks.length; i++) {
-  navbarLinks[i].addEventListener("click", function () {
-    navbar.classList.toggle("active");
-    overlay.classList.toggle("active");
-  });
+    navbarLinks[i].addEventListener("click", function() {
+        navbar.classList.toggle("active");
+        overlay.classList.toggle("active");
+    });
 }
 
 
@@ -45,14 +45,29 @@ for (let i = 0; i < navbarLinks.length; i++) {
 const header = document.querySelector("[data-header]");
 const goTopBtn = document.querySelector("[data-go-top]");
 
-window.addEventListener("scroll", function () {
-  if (window.scrollY >= 400) {
-    header.classList.add("active");
-    goTopBtn.classList.add("active");
-  } else {
-    header.classList.remove("active");
-    goTopBtn.classList.remove("active");
-  }
+window.addEventListener("scroll", function() {
+    if (window.scrollY >= 400) {
+        header.classList.add("active");
+        goTopBtn.classList.add("active");
+    } else {
+        header.classList.remove("active");
+        goTopBtn.classList.remove("active");
+    }
+});
+
+
+/**
+ * header active outher pages
+ */
+
+const headerp = document.querySelector("[data-header-pages]");
+
+window.addEventListener("scroll", function() {
+    if (window.scrollY >= 100) {
+        headerp.classList.add("active");
+    } else {
+        headerp.classList.add("active");
+    }
 });
 
 /**
@@ -60,7 +75,7 @@ cookies
  */
 
 // Verifica se o usuário já fez uma escolha
-window.onload = function () {
+window.onload = function() {
     const consent = localStorage.getItem("cookieConsent");
     if (!consent) {
         document.getElementById("cookie-banner").style.display = "block";
@@ -103,13 +118,13 @@ function openPreferences() {
 const themeToggleBtn = document.querySelector("[data-theme-btn]");
 
 // Theme toggle function
-themeToggleBtn.addEventListener("click", function () {
+themeToggleBtn.addEventListener("click", function() {
     // Toggle the active class on the button
     themeToggleBtn.classList.toggle("active");
-    
+
     // Check if dark theme should be applied
     const isDark = !themeToggleBtn.classList.contains("active");
-    
+
     // Apply the appropriate theme
     if (isDark) {
         document.body.classList.add("dark_theme");
@@ -129,7 +144,7 @@ themeToggleBtn.addEventListener("click", function () {
 // Function to initialize theme
 function initializeTheme() {
     const savedTheme = localStorage.getItem("theme");
-    
+
     // Set theme based on saved preference or default to dark
     if (savedTheme === "light_theme") {
         themeToggleBtn.classList.add("active");

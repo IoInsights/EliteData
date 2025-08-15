@@ -38,13 +38,13 @@
      * Theme Variables (Light Theme Defaults)
      */
     --bg-primary: var(--white);
-    --bg-secondary: hsl(0, 0%, 95%);
+    --bg-secondary: hsl(0, 0%, 90%);
     --text-primary: var(--space-cadet-2);
     --text-secondary: var(--purple-navy);
     --card-bg: var(--white);
     --header-bg: transparent;
     --header-bg-active: var(--white);
-    --nav-bg: var(--white);
+    --nav-bg: hsl(0, 0%, 90%);
     --footer-bg: var(--space-cadet-2);
     --scrollbar-track: hsl(0, 0%, 95%);
     --scrollbar-thumb: hsl(0, 0%, 80%);
@@ -112,12 +112,12 @@ body.dark_theme {
     --winter-sky_50: hsla(335, 87%, 53%, 0.3);
     
     /* Theme Variables */
-    --bg-primary: hsl(0, 0%, 12%);
-    --bg-secondary: hsl(0, 0%, 18%);
+    --bg-primary: #1f1f1f;
+    --bg-secondary: hsl(0, 0%, 19%);
     --text-primary: hsl(0, 0%, 90%);
     --text-secondary: hsl(0, 0%, 75%);
     --card-bg: hsl(0, 0%, 18%);
-    --header-bg: hsl(0, 0%, 15%);
+    --header-bg: transparent;
     --header-bg-active: hsl(0, 0%, 12%);
     --nav-bg: hsl(0, 0%, 20%);
     --footer-bg: hsl(0, 0%, 10%);
@@ -992,7 +992,7 @@ body {
 .theme-btn {
     padding: 4px;
     width: 48px;
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
     border-radius: 100px;
     transition: var(--transition-1);
     cursor: pointer;
@@ -1001,7 +1001,7 @@ body {
 }
 
 .header.active .theme-btn {
-    background: var(--bg-primary);
+    background: var(--bg-secondary);
 }
 
 .theme-btn .icon {
