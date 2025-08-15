@@ -59,7 +59,6 @@ window.addEventListener("scroll", function () {
 cookies
  */
 
-<script>
 // Verifica se o usuário já fez uma escolha
 window.onload = function () {
     const consent = localStorage.getItem("cookieConsent");
@@ -90,4 +89,68 @@ function rejectCookies() {
 function openPreferences() {
     alert("Painel de preferências de cookies ainda não implementado. Você pode configurar manualmente no seu navegador.");
 }
-</script>
+
+
+/**
+ * THEME
+ */
+
+
+/**
+ * THEME TOGGLE FUNCTIONALITY
+ */
+
+const themeToggleBtn = document.querySelector("[data-theme-btn]");
+
+// Theme toggle function
+themeToggleBtn.addEventListener("click", function () {
+    // Toggle the active class on the button
+    themeToggleBtn.classList.toggle("active");
+    
+    // Check if dark theme should be applied
+    const isDark = !themeToggleBtn.classList.contains("active");
+    
+    // Apply the appropriate theme
+    if (isDark) {
+        document.body.classList.add("dark_theme");
+        document.body.classList.remove("light_theme");
+        localStorage.setItem("theme", "dark_theme");
+    } else {
+        document.body.classList.remove("dark_theme");
+        document.body.classList.add("light_theme");
+        localStorage.setItem("theme", "light_theme");
+    }
+});
+
+/**
+ * CHECK AND APPLY SAVED THEME FROM LOCALSTORAGE
+ */
+
+// Function to initialize theme
+function initializeTheme() {
+    const savedTheme = localStorage.getItem("theme");
+    
+    // Set theme based on saved preference or default to dark
+    if (savedTheme === "light_theme") {
+        themeToggleBtn.classList.add("active");
+        document.body.classList.remove("dark_theme");
+        document.body.classList.add("light_theme");
+    } else {
+        // Default to dark theme if no preference saved
+        themeToggleBtn.classList.remove("active");
+        document.body.classList.remove("light_theme");
+        document.body.classList.add("dark_theme");
+        localStorage.setItem("theme", "dark_theme");
+    }
+}
+
+// Initialize theme when page loads
+initializeTheme();
+
+/**
+ * HELPER FUNCTION FOR TOGGLING ELEMENTS
+ * (Assuming this is used elsewhere in your code)
+ */
+function elemToggleFunc(elem) {
+    elem.classList.toggle("active");
+}
