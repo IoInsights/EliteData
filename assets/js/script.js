@@ -54,3 +54,40 @@ window.addEventListener("scroll", function () {
     goTopBtn.classList.remove("active");
   }
 });
+
+/**
+cookies
+ */
+
+<script>
+// Verifica se o usuário já fez uma escolha
+window.onload = function () {
+    const consent = localStorage.getItem("cookieConsent");
+    if (!consent) {
+        document.getElementById("cookie-banner").style.display = "block";
+    } else {
+        document.getElementById("cookie-banner").style.display = "none";
+    }
+};
+
+// Aceita todos os cookies
+function acceptCookies() {
+    localStorage.setItem("cookieConsent", "accepted");
+    document.getElementById("cookie-banner").style.display = "none";
+    // Aqui você pode ativar scripts de terceiros, como Google Analytics
+    console.log("Cookies aceitos.");
+}
+
+// Recusa cookies não essenciais
+function rejectCookies() {
+    localStorage.setItem("cookieConsent", "rejected");
+    document.getElementById("cookie-banner").style.display = "none";
+    // Aqui você pode bloquear scripts não essenciais
+    console.log("Cookies não essenciais recusados.");
+}
+
+// Abre painel de preferências (simulado)
+function openPreferences() {
+    alert("Painel de preferências de cookies ainda não implementado. Você pode configurar manualmente no seu navegador.");
+}
+</script>
