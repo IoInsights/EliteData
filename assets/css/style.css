@@ -707,7 +707,7 @@ body {
   color: var(--white);
   font-size: 2rem;
   padding: 14px;
-  border-radius: var(--radius-4);
+  border-radius: 25px 25px /*var(--radius-4)*/;
   box-shadow: -3px 3px 15px var(--winter-sky_50);
   z-index: 2;
   visibility: hidden;
