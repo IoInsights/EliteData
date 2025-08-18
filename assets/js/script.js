@@ -169,3 +169,48 @@ initializeTheme();
 function elemToggleFunc(elem) {
     elem.classList.toggle("active");
 }
+
+//Imagens Blog
+// JavaScript para controlar o popup
+// JavaScript ATUALIZADO para evitar flickering
+document.addEventListener('DOMContentLoaded', function() {
+    const popupLinks = document.querySelectorAll('.popup-image');
+    const popupOverlay = document.querySelector('.popup-overlay');
+    const closePopup = document.querySelector('.close-popup');
+    const popupImg = document.querySelector('.popup-img');
+
+    popupLinks.forEach(link => {
+        // Abrir popup ao clicar
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            const imgSrc = this.querySelector('img').src;
+            popupImg.src = imgSrc;
+
+            popupOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    // Fechar popup
+    function closePopupFn() {
+        popupOverlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    closePopup.addEventListener('click', closePopupFn);
+
+    popupOverlay.addEventListener('click', function(e) {
+        if (e.target === popupOverlay) {
+            closePopupFn();
+        }
+    });
+
+    // Fechar com ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && popupOverlay.classList.contains('active')) {
+            closePopupFn();
+        }
+    });
+});

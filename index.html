@@ -80,26 +80,25 @@
 
             </nav>
 
-            <a href="https://wa.me/5533998081882" class="btn" target="_blank">
-                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
 
-                <span>Faça uma cotação</span>
-            </a>
+            <div class="navbar-actions">
+                <a href="https://wa.me/5533998081882" class="btn" target="_blank">
+                    <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
 
-                    
+                    <span>Faça uma cotação</span>
+                </a>
 
-      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+                <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn="data-theme-btn">
+                        <span class="icon"></span>
+                    </button>
+            </div>
+
+            <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
         <ion-icon name="menu-outline"></ion-icon>
       </button>
 
-      <button
-                        class="theme-btn"
-                        aria-label="Change Theme"
-                        title="Change Theme"
-                        data-theme-btn="data-theme-btn">
-                        <span class="icon"></span>
-                    </button>
-                          
+
+
 
         </div>
     </header>
@@ -384,53 +383,77 @@
 
             <section class="section blog" id="blog">
                 <div class="container">
-
                     <h2 class="h2 section-title underline">Blog & Novidades</h2>
 
                     <ul class="blog-list">
-
                         <li>
-                            <div class="blog-card">
 
+
+                            <div class="blog-card">
+                                <!-- Imagem com classe para popup e data attribute -->
                                 <figure class="banner">
-                                    <a href="#">
+                                    <a href="#" class="popup-image">
                                         <img src="./assets/images/blog-1.jpg" width="750" height="350" loading="lazy" alt="Por que conectar BI ao banco transacional pode ser um erro caro?" class="img-cover">
                                     </a>
                                 </figure>
 
-                                <div class="content">
+                                <!--  Popup overlay (inicialmente escondido)-->
+                                <div class="popup-overlay">
+                                    <div class="popup-content">
+                                        <span class="close-popup">&times;</span>
+                                        <img src="" alt="Imagem ampliada" class="popup-img">
+                                    </div>
+                                </div>
 
-                                    <h3 class="h3 title">
-                                        <a href="#">
-                      Por que conectar BI ao banco transacional pode ser um erro caro?
-                    </a>
-                                    </h3>
 
-                                    <p class="text"> Nem sempre conectar direto ao OLTP é um problema… mas quando é, pode sair bem caro. No modelo OLTP, a prioridade é registrar e processar as operações rapidamente, não lidar com análises pesadas.
-                                    </p>
+                                <div class="blog-card">
+                                    <figure class="banner">
+                                        <a href="#" class="popup-image">
+                                            <img src="./assets/images/blog-1.jpg" width="750" height="350" loading="lazy" alt="Por que conectar BI ao banco transacional pode ser um erro caro?" class="img-cover">
+                                        </a>
+                                    </figure>
 
-                                    <div class="meta">
 
-                                        <div class="publish-date">
-                                            <ion-icon name="time-outline"></ion-icon>
-
-                                            <time datetime="2025-07-10">10 de julho de 2025</time>
+                                    Popup overlay global
+                                    <div class="popup-overlay">
+                                        <div class="popup-content">
+                                            <span class="close-popup">&times;</span>
+                                            <img src="" alt="Imagem ampliada" class="popup-img">
                                         </div>
-
-                                        <button class="comment" aria-label="Comment">
-                      <ion-icon name="chatbubble-outline"></ion-icon>
-
-                      <data value="37">37</data>
-                    </button>
-
-                                        <button class="share" aria-label="Share">
-                      <ion-icon name="share-social-outline"></ion-icon>
-                    </button>
-
                                     </div>
 
                                 </div>
 
+
+
+
+                                <div class="content">
+                                    <h3 class="h3 title">
+                                        <a href="#">
+                                Por que conectar BI ao banco transacional pode ser um erro caro?
+                            </a>
+                                    </h3>
+
+                                    <p class="text">
+                                        Nem sempre conectar direto ao OLTP é um problema… mas quando é, pode sair bem caro. No modelo OLTP, a prioridade é registrar e processar as operações rapidamente, não lidar com análises pesadas.
+                                    </p>
+
+                                    <div class="meta">
+                                        <div class="publish-date">
+                                            <ion-icon name="time-outline"></ion-icon>
+                                            <time datetime="2025-07-10">10 de julho de 2025</time>
+                                        </div>
+
+                                        <button class="comment" aria-label="Comment">
+                                <ion-icon name="chatbubble-outline"></ion-icon>
+                                <data value="37">37</data>
+                            </button>
+
+                                        <button class="share" aria-label="Share">
+                                <ion-icon name="share-social-outline"></ion-icon>
+                            </button>
+                                    </div>
+                                </div>
                             </div>
                         </li>
 
@@ -636,11 +659,11 @@
                     </li>
 
                     <li>
-                        <a href="#" class="footer-link">Sobre nós</a>
+                        <a href="#about" class="footer-link">Sobre nós</a>
                     </li>
 
                     <li>
-                        <a href="#" class="footer-link">Serviços</a>
+                        <a href="#services" class="footer-link">Serviços</a>
                     </li>
 
                     <!--   <li>
@@ -648,7 +671,7 @@
                     </li>-->
 
                     <li>
-                        <a href="#" class="footer-link">Blog</a>
+                        <a href="#blog" class="footer-link">Blog</a>
                     </li>
 
                 </ul>
@@ -748,7 +771,7 @@
                         </div>
 
                         <address class="footer-item-link">
-              Rio de Janeiro, RJ, Brasil
+              Belo Horizonte, MG, Brasil
             </address>
 
                     </li>
@@ -792,7 +815,7 @@
   -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
+
 
 </body>
 
