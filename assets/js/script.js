@@ -195,3 +195,17 @@ document.getElementById("imageModal").onclick = function(e) {
         this.style.display = "none";
     }
 };
+
+
+//FAQ
+
+
+document.querySelectorAll(".faq-list details").forEach((item) => {
+    item.addEventListener("toggle", () => {
+        if (item.open) {
+            document.querySelectorAll(".faq-list details").forEach((other) => {
+                if (other !== item) other.removeAttribute("open");
+            });
+        }
+    });
+});
