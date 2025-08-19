@@ -387,50 +387,18 @@
 
                     <ul class="blog-list">
                         <li>
-
-
                             <div class="blog-card">
-                                <!-- Imagem com classe para popup e data attribute -->
+
                                 <figure class="banner">
                                     <a href="#" class="popup-image">
-                                        <img src="./assets/images/blog-1.jpg" width="750" height="350" loading="lazy" alt="Por que conectar BI ao banco transacional pode ser um erro caro?" class="img-cover">
+                                        <img src="./assets/images/blog-1.jpg" width="750" height="350" loading="lazy" alt="Por que conectar BI ao banco transacional pode ser um erro?" class="img-cover">
                                     </a>
                                 </figure>
-
-                                <!--  Popup overlay (inicialmente escondido)-->
-                                <div class="popup-overlay">
-                                    <div class="popup-content">
-                                        <span class="close-popup">&times;</span>
-                                        <img src="" alt="Imagem ampliada" class="popup-img">
-                                    </div>
-                                </div>
-
-
-                                <div class="blog-card">
-                                    <figure class="banner">
-                                        <a href="#" class="popup-image">
-                                            <img src="./assets/images/blog-1.jpg" width="750" height="350" loading="lazy" alt="Por que conectar BI ao banco transacional pode ser um erro caro?" class="img-cover">
-                                        </a>
-                                    </figure>
-
-
-                                    Popup overlay global
-                                    <div class="popup-overlay">
-                                        <div class="popup-content">
-                                            <span class="close-popup">&times;</span>
-                                            <img src="" alt="Imagem ampliada" class="popup-img">
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-
 
                                 <div class="content">
                                     <h3 class="h3 title">
                                         <a href="#">
-                                Por que conectar BI ao banco transacional pode ser um erro caro?
+                                Por que conectar BI ao banco transacional pode ser um erro?
                             </a>
                                     </h3>
 
@@ -461,7 +429,7 @@
                             <div class="blog-card">
 
                                 <figure class="banner">
-                                    <a href="#">
+                                    <a href="#" class="popup-image">
                                         <img src="./assets/images/blog-2.jpg" width="750" height="350" loading="lazy" alt="Documentação de Dashboards" class="img-cover">
                                     </a>
                                 </figure>
@@ -507,7 +475,7 @@
                             <div class="blog-card">
 
                                 <figure class="banner">
-                                    <a href="#">
+                                    <a href="#" class="popup-image">
                                         <img src="./assets/images/blog-3.jpg" width="750" height="350" loading="lazy" alt="Levantamento de requisitos." class="img-cover">
                                     </a>
                                 </figure>
@@ -553,7 +521,7 @@
                             <div class="blog-card">
 
                                 <figure class="banner">
-                                    <a href="#">
+                                    <a href="#" class="popup-image">
                                         <img src="./assets/images/blog-4.jpg" width="750" height="350" loading="lazy" alt="Etapas de criação de Relatórios" class="img-cover">
                                     </a>
                                 </figure>
@@ -599,7 +567,12 @@
 
                 </div>
             </section>
-
+            <!-- Modal de Imagem -->
+            <div id="imageModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImg">
+                <div id="caption"></div>
+            </div>
         </article>
     </main>
 

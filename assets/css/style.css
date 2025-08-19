@@ -33,6 +33,9 @@
     --white: hsl(0, 0%, 100%);
     --gradient-1: linear-gradient(90deg, var(--royal-blue-dark) 0, var(--ksu-purple) 51%, var(--royal-blue-dark));
     --gradient-2: linear-gradient(90deg, var(--razzmatazz), var(--rajah));
+    --hero-layer-1: url("../images/hero-bg-bottom.png");
+    --hero-layer-2: url("../images/hero-bg.png");
+    --service-pattern: url("../images/service-banner-pattern.png");
     /**
      * Theme Variables (Light Theme Defaults)
      */
@@ -121,6 +124,8 @@ body.dark_theme {
     /* Gradients */
     --gradient-1: linear-gradient(90deg, var(--royal-blue-dark) 0, var(--ksu-purple) 51%, var(--royal-blue-dark));
     --gradient-2: linear-gradient(90deg, var(--razzmatazz), var(--rajah));
+    --hero-layer-1: url("../images/hero-bg-bottom-dark.png");
+    --service-pattern: url("../images/service-banner-pattern-dark.png");
 }
 
 
@@ -237,7 +242,8 @@ body {
     transition: var(--transition-2);
 }
 
-.btn:is(:hover, :focus) {
+.btn:is(:hover,
+ :focus) {
     background-position: right;
 }
 
@@ -288,13 +294,16 @@ body {
     border-radius: 10px;
 }
 
-:is(.service-card, .features-card) .title {
+:is(.service-card,
+.features-card) .title {
     color: var(--st-patricks-blue);
     font-size: var(--fs-4);
     font-weight: var(--fw-700);
 }
 
-:is(.service-card, .features-card, .blog-card) .text {
+:is(.service-card,
+.features-card,
+.blog-card) .text {
     font-size: var(--fs-8);
     color: var(--text-secondary);
 }
@@ -435,7 +444,8 @@ body {
 \*-----------------------------------*/
 
 .hero {
-    background-image: url("../images/hero-bg-bottom.png"), url("../images/hero-bg.png"), var(--gradient-1);
+    /*  background-image: url("../images/hero-bg-bottom.png"), url("../images/hero-bg.png"), var(--gradient-1);*/
+    background-image: var(--hero-layer-1), var(--hero-layer-2), var(--gradient-1);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: -280px bottom, center, center;
     background-size: auto, cover, auto;
@@ -539,10 +549,11 @@ body {
 }
 
 .service-card .card-icon {
-    background-image: url("../images/service-banner-pattern.png");
+    /* background-image: url("../images/service-banner-pattern.png");*/
+    background-image: var(--service-pattern);
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: hsla(335, 87%, 53%, 0.12);
+    background-color: hsla(357, 87%, 53%, 0.3);
     aspect-ratio: 1 / 1;
     max-width: 165px;
     display: grid;
@@ -772,188 +783,47 @@ body {
 
 /* Estilos para o popup */
 
-
-/* Estilos para o popup - ATUALIZADOS 
-
-.popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+.modal {
     display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-}
-
-.popup-overlay.active {
-    display: flex;
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.popup-content {
-    position: relative;
-    max-width: 90%;
-    max-height: 90%;
-    transition: transform 0.3s ease;
-    transform: scale(0.95);
-}
-
-.popup-overlay.active .popup-content {
-    transform: scale(1);
-}
-
-.popup-img {
-    max-width: 100%;
-    max-height: 80vh;
-    display: block;
-    margin: 0 auto;
-    border-radius: 4px;
-}
-
-.close-popup {
-    position: absolute;
-    top: -40px;
-    right: 0;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    transition: color 0.2s ease;
-}
-
-.close-popup:hover {
-    color: #ccc;
-}
-
-.popup-image img {
-    transition: transform 0.3s ease;
-}
-
-.popup-image img:hover {
-    transform: scale(1.03);
-}*/
-
-.popup-overlay {
     position: fixed;
-    top: 0;
+    z-index: 9999;
+    padding-top: 60px;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    /* Mantém no fluxo */
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-    /* Controla visibilidade */
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    pointer-events: none;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
-.popup-overlay.active {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
-
-.popup-content {
-    position: relative;
+.modal-content {
+    display: block;
+    margin: auto;
     max-width: 90%;
-    max-height: 90%;
-    transition: transform 0.3s ease;
-    transform: scale(0.95);
-}
-
-.popup-overlay.active .popup-content {
-    transform: scale(1);
-}
-
-.popup-img {
-    max-width: 100%;
     max-height: 80vh;
-    display: block;
-    margin: 0 auto;
-    border-radius: 4px;
+    border-radius: 12px;
 }
 
-.close-popup {
+#caption {
+    margin: 15px auto;
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 16px;
+}
+
+.close {
     position: absolute;
-    top: -40px;
-    right: 0;
-    color: white;
-    font-size: 30px;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
     cursor: pointer;
-    transition: color 0.2s ease;
+    transition: 0.3s;
 }
 
-.close-popup:hover {
-    color: #ccc;
-}
-
-.popup-image img {
-    transition: transform 0.3s ease;
-}
-
-.popup-image img:hover {
-    transform: scale(1.03);
-}
-
-
-/* Hover suave no banner */
-
-.banner a {
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-
-.banner a::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.banner a:hover::after {
-    opacity: 1;
-}
-
-
-/* Adicione isso para evitar flickering no hover da imagem */
-
-.banner a {
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-
-.banner a::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.banner a:hover::after {
-    opacity: 1;
+.close:hover {
+    color: #f00;
 }
 
 

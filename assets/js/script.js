@@ -171,46 +171,27 @@ function elemToggleFunc(elem) {
 }
 
 //Imagens Blog
-// JavaScript para controlar o popup
-// JavaScript ATUALIZADO para evitar flickering
-document.addEventListener('DOMContentLoaded', function() {
-    const popupLinks = document.querySelectorAll('.popup-image');
-    const popupOverlay = document.querySelector('.popup-overlay');
-    const closePopup = document.querySelector('.close-popup');
-    const popupImg = document.querySelector('.popup-img');
+document.querySelectorAll(".popup-image img").forEach(img => {
+    img.addEventListener("click", function(e) {
+        e.preventDefault();
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImg");
+        const caption = document.getElementById("caption");
 
-    popupLinks.forEach(link => {
-        // Abrir popup ao clicar
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            const imgSrc = this.querySelector('img').src;
-            popupImg.src = imgSrc;
-
-            popupOverlay.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        });
-    });
-
-    // Fechar popup
-    function closePopupFn() {
-        popupOverlay.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    }
-
-    closePopup.addEventListener('click', closePopupFn);
-
-    popupOverlay.addEventListener('click', function(e) {
-        if (e.target === popupOverlay) {
-            closePopupFn();
-        }
-    });
-
-    // Fechar com ESC
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && popupOverlay.classList.contains('active')) {
-            closePopupFn();
-        }
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        caption.textContent = this.alt;
     });
 });
+
+// Fechar modal
+document.querySelector(".modal .close").onclick = function() {
+    document.getElementById("imageModal").style.display = "none";
+};
+
+// Fechar ao clicar fora da imagem
+document.getElementById("imageModal").onclick = function(e) {
+    if (e.target === this) {
+        this.style.display = "none";
+    }
+};
