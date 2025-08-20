@@ -222,6 +222,39 @@ body {
   background-color: hsl(0, 0%, 50%);
 }
 
+/* container (imagem + texto lado a lado) */
+.logo-container {
+  display:flex;
+  align-items: center;   /* centraliza imagem + texto na vertical */
+  text-decoration: none; /* tira sublinhado */
+  gap: 8px;              /* espaço entre eles */
+}
+
+/* imagem */
+.logo-img {
+  width: 40px;   /* controla o tamanho */
+  height: auto;  /* mantém proporção */
+  display: flex; /* garante que se comporte bem em flex */
+}
+
+/* texto */
+.logo {
+  font-size: 24px;
+  margin: 0;
+  color: #000;
+  line-height: 1;  /* ajuda a alinhar com a imagem */
+}
+
+/* no mobile esconde o texto */
+@media (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+}
+
+
+
+
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -925,7 +958,7 @@ body {
 }
 
 :is(.footer-link, .footer-link-srv, .footer-item-link):not(address):is(:hover, :focus) {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .footer-item {
@@ -1166,6 +1199,7 @@ body {
   /**
      * HEADER
      */
+     
   .header .btn {
     display: flex;
     align-items: center;
