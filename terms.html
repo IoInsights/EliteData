@@ -1,436 +1,729 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elite Data - Termos de Uso</title>
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body id="top">
-
+  <body id="top">
     <!-- 
     - #HEADER
   -->
 
     <header class="header active" data-header-pages>
-        <div class="container">
+      <div class="container">
+        <div class="overlay" data-overlay></div>
 
-            <div class="overlay" data-overlay></div>
+        <a href="index.html#home">
+          <h1 class="logo">Elite Data</h1>
+        </a>
 
-            <a href="index.html#home">
-                <h1 class="logo">Elite Data</h1>
-            </a>
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="index.html#home" class="logo">Elite Data</a>
 
-            <nav class="navbar" data-navbar>
+            <button
+              class="nav-close-btn"
+              aria-label="Close Menu"
+              data-nav-close-btn
+            >
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
 
-                <div class="navbar-top">
-                    <a href="index.html#home" class="logo">Elite Data</a>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link" data-navbar-link
+                >Início</a
+              >
+            </li>
 
-                    <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-                </div>
+            <li class="navbar-item">
+              <a href="index.html#about" class="navbar-link" data-navbar-link
+                >Sobre</a
+              >
+            </li>
 
-                <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="index.html#services" class="navbar-link" data-navbar-link
+                >Serviços</a
+              >
+            </li>
 
+            <li class="navbar-item">
+              <a href="index.html#features" class="navbar-link" data-navbar-link
+                >Soluções</a
+              >
+            </li>
 
-                    <li class="navbar-item">
-                        <a href="index.html" class="navbar-link" data-navbar-link>Início</a>
-                    </li>
+            <li class="navbar-item">
+              <a href="index.html#blog" class="navbar-link" data-navbar-link
+                >Blog</a
+              >
+            </li>
 
-                    <li class="navbar-item">
-                        <a href="index.html#about" class="navbar-link" data-navbar-link>Sobre</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="index.html#services" class="navbar-link" data-navbar-link>Serviços</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="index.html#features" class="navbar-link" data-navbar-link>Soluções</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="index.html#blog" class="navbar-link" data-navbar-link>Blog</a>
-                    </li>
-
-                    <!--<li class="navbar-item">
+            <!--<li class="navbar-item">
                         <a href="#" class="navbar-link" data-navbar-link>Fale Conosco</a>
                     </li>-->
+          </ul>
+        </nav>
 
-                </ul>
+        <div class="navbar-actions">
+          <a href="https://wa.me/5533998081882" class="btn" target="_blank">
+            <ion-icon
+              name="chevron-forward-outline"
+              aria-hidden="true"
+            ></ion-icon>
 
-            </nav>
+            <span>Faça uma cotação</span>
+          </a>
 
-            <div class="navbar-actions">
-                <a href="https://wa.me/5533998081882" class="btn" target="_blank">
-                    <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-
-                    <span>Faça uma cotação</span>
-                </a>
-
-                <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn="data-theme-btn">
-                        <span class="icon"></span>
-                    </button>
-            </div>
-
-            <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-        <ion-icon name="menu-outline"></ion-icon>
-      </button>
-
-
+          <button
+            class="theme-btn"
+            aria-label="Change Theme"
+            title="Change Theme"
+            data-theme-btn="data-theme-btn"
+          >
+            <span class="icon"></span>
+          </button>
         </div>
+
+        <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+      </div>
     </header>
 
     <main>
+      <article class="section container" style="padding-top: 120px">
+        <h1 class="h2 section-title underline">Termos de Uso</h1>
+        <h5>Atualizado em 11 de julho de 2025</h5>
+        <h6>
+          Contents of this site are ©Copyright 2025 TTT Company Inc. All rights
+          reserved.
+        </h6>
+        <p style="font-size: 10px">
+          The
+          <a
+            href="https://github.com/tarcisttobias/security"
+            style="display: inline"
+            >source code</a
+          >
+          is available under the
+          <a
+            href="https://raw.githubusercontent.com/tarcisttobias/security/master/LICENSE"
+            style="display: inline"
+            >Apache License 2.0</a
+          >
+        </p>
 
-        <article class="section container" style="padding-top: 120px;">
-            <h1 class="h2 section-title underline">Termos de Uso</h1>
-            <h5>Atualizado em 11 de julho de 2025</h5>
-            <h6> Contents of this site are ©Copyright 2025 TTT Company Inc. All rights reserved.</h6>
-            <p style="font-size: 10px">The <a href="https://github.com/tarcisttobias/security" style="display:inline;">source code</a> is available under the
-                <a href="https://raw.githubusercontent.com/tarcisttobias/security/master/LICENSE" style="display:inline;">Apache License 2.0</a>
-            </p>
+        <br />
 
-            <br>
-
-            <p>&nbsp;</p>
-            <p class="legal-des">O que você precisa saber antes de ler os termos e condições gerais de uso de software da ELITE DATA?<br>Usamos a palavra SOFTWARE como um termo genérico para definir todas as soluções de software e ferramentas afins, pagas ou gratuitas da
-                ELITE DATA, podendo ser um serviço em nuvem, uma plataforma corporativa, um aplicativo para download, uma licença de software (embarcado no hardware ou disponível para download), um firmware de hardware, um website, uma landing page, um
-                módulo ou biblioteca de software (SDK e APIs, por exemplo).</p>
-            <p class="legal-des"><br>TERMOS E CONDIÇÕES GERAIS: LICENÇA DE USO DE SOFTWARE ELITE DATA</p>
-            <p class="legal-des"><br>PARA UTILIZAR O PORTAL ELITE DATA, É INDISPENSÁVEL A ACEITAÇÃO DOS TERMOS DESCRITOS A SEGUIR.</p>
-            <p class="legal-des"><br>Estes termos de uso de software ELITE DATA (TERMOS) são um acordo legal entre o USUÁRIO e a ELITE DATA S/A que define as condutas de relacionamento que devem ser seguidas pelo USUÁRIO para uso do SOFTWARE a que os presentes TERMOS referenciam.
-            </p>
-            <p class="legal-des"><br>O USUÁRIO declara que fez a leitura completa e atenta das regras deste documento, estando plenamente ciente e concordando expressamente com os termos aqui estipulados. Ainda, o USUÁRIO declara estar ciente de que, ao utilizar o SOFTWARE,
-                estará sujeito aos termos, concordando com suas disposições. O USUÁRIO deverá também efetuar a leitura e estar ciente da política de proteção de dados pessoais da ELITE DATA.</p>
-            <p class="legal-des"><br>Caso o USUÁRIO não concorde com os presentes termos, a utilização do SOFTWARE deve ser imediatamente interrompida.</p>
-            <p class="legal-des"><br>Ao fazer uso do SOFTWARE, o USUÁRIO declara ainda que possui as condições legais para praticar os atos da vida civil sem a dependência de terceiros.</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <h3>1. ACEITE</h3>
-            <p>&nbsp;</p>
-            <p class="legal-des">1.1. Ao fazer uso do SOFTWARE ELITE DATA, o USUÁRIO manifesta sua concordância em se submeter a todas as condições destes termos, bem como plena ciência de todas as responsabilidades a ele vinculadas.</p>
-            <p class="legal-des"><br>1.2. No primeiro acesso ao SOFTWARE, o USUÁRIO deverá alterar a senha padrão ou cadastrar uma senha pela primeira vez, dentro dos padrões de segurança recomendados. O USUÁRIO será exclusivamente responsável pelo uso e armazenagem de sua
-                senha de acesso.</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <h3>2. CADASTRO</h3>
-            <p>&nbsp;</p>
-            <p class="legal-des">2.1. Ao fazer uso do SOFTWARE, poderá ser solicitado um cadastro de usuário, sendo de responsabilidade do USUÁRIO fornecer as informações solicitadas, bem como garantir que os dados informados sejam fiéis e verdadeiros (assumindo a responsabilidade
-                cível e criminal pelas informações prestadas), comprometendo-se a mantê-los sempre atualizados e declarando estar ciente de que esses dados poderão ser verificados a qualquer momento.</p>
-            <p class="legal-des"><br>2.2. A ELITE DATA não será responsável pelas informações prestadas pelo USUÁRIO, mas se reserva ao direito de verificar, a qualquer momento, a veracidade de tais informações e solicitar, a seu exclusivo critério, a documentação que julgar
-                necessária para a devida comprovação das informações prestadas.</p>
-            <p class="legal-des"><br>2.3. Caso seja detectado uso ilegal do SOFTWARE, o acesso a ele será automaticamente bloqueado, não cabendo ao USUÁRIO, por esse motivo, qualquer direito de indenização ou ressarcimento.</p>
-            <p class="legal-des"><br>2.4. O titular e administrador da conta será aquele definido no momento do cadastro de usuário.</p>
-            <p class="legal-des"><br>2.5. A conta é pessoal e intransferível e poderá ser acessada unicamente mediante a utilização do USUÁRIO e senha criados pelo próprio USUÁRIO.</p>
-            <p class="legal-des"><br>2.6. O USUÁRIO responsabiliza-se inteiramente por todas as atividades associadas a sua conta.</p>
-            <p>&nbsp;</p>
-            <h3>3. PROPRIEDADE INTELECTUAL</h3>
-            <p class="legal-des"><br>3.1. A ELITE DATA detém todos os direitos de propriedade intelectual de seu SOFTWARE, ressalvados aqueles desenvolvidos e comercializados por terceiros, sendo assim, ao aceitar os termos previstos neste documento, o USUÁRIO declara estar
-                ciente de que não adquire direito de uso das marcas registradas ou de qualquer outro item de propriedade intelectual da ELITE DATA ou de terceiros, ou mesmo qualquer direito sobre o SOFTWARE ou item relacionado a ele ou a qualquer componente
-                dele, além dos direitos expressamente relacionados ao USUÁRIO nestes termos ou em qualquer outro contrato mutuamente acordado por escrito entre as a ELITE DATA e o USUÁRIO.</p>
-            <p class="legal-des"><br>3.2. O USUÁRIO compromete-se a notificar prontamente a ELITE DATA, por escrito, de qualquer suspeita de uso não autorizado ou infração aos direitos de propriedade intelectual da ELITE DATA de que venha a ter conhecimento.</p>
-            <p class="legal-des"><br>3.3. Se solicitado pela ELITE DATA, o USUÁRIO deverá auxiliar a ELITE DATA em quaisquer investigações, negociações ou procedimentos judiciais em virtude de qualquer alegação de uso indevido ou de violação aos direitos de propriedade intelectual
-                da ELITE DATA.</p>
-            <p class="legal-des"><br>3.4. O USUÁRIO, com o aceite do presente contrato, AUTORIZA a ELITE DATA a fazer uso dos direitos de propriedade intelectual de que é titular, tais como marca, logomarca, imagem, voz, nome empresarial ou site de propriedade do USUÁRIO,
-                de forma gratuita, a título universal, de forma irrevogável, em todo o território nacional e no exterior, com a finalidade de divulgação positiva ao público em geral, inclusive participação em gravações e fotografias em treinamentos, palestras,
-                com caráter informativo, educativo, publicitário e/ou comercial, associado à ELITE DATA, seus cursos, treinamentos, soluções e empresas do Grupo.</p>
-            <p class="legal-des"><br>3.5. A ELITE DATA reserva para si todos os direitos que não foram expressamente concedidos por estes TERMOS.</p>
-            <p>&nbsp;</p>
-            <h3>4. PROTEÇÃO DE PRIVACIDADE</h3>
-            <p class="legal-des"><br>4.1. A ELITE DATA respeita integralmente todos os princípios de proteção dos dados pessoais do USUÁRIO; proteger suas informações pessoais é um princípio básico da ELITE DATA.</p>
-            <p class="legal-des"><br>4.2. A ELITE DATA tem sua Política de Privacidade, por meio da qual divulga informações importantes sobre coleta, uso, compartilhamento, armazenamento e exclusão de informações pessoais e outros aspectos relacionados aos seus interesses
-                vitais.
-            </p>
-            <p class="legal-des"><br>4.3. O USUÁRIO está ciente e de acordo de que, a qualquer momento, suas informações serão processadas de acordo com a Política de Privacidade ELITE DATA.</p>
-            <p>&nbsp;</p>
-            <h3>5. COMPROMISSOS DO USUÁRIO</h3>
-            <p class="legal-des"><br>5.1. É vedado copiar ou reproduzir de qualquer outra forma as informações, manuais, literatura técnica e outros documentos fornecidos pela ELITE DATA, exceto para o cumprimento de obrigações estabelecidas nos termos deste instrumento,
-                mediante prévia autorização e de acordo com a legislação aplicável relativamente a direitos autorais e propriedade intelectual.</p>
-            <p class="legal-des"><br>5.2. As obrigações estabelecidas na presente cláusula se aplicam ao USUÁRIO durante a vigência do presente instrumento, bem como após seu término.</p>
-            <p>&nbsp;</p>
-            <p class="legal-des">5.3. Ao utilizar o SOFTWARE, o USUÁRIO concorda com as seguintes diretrizes:</p>
-            <p class="legal-des-in"><br><br>(a) Não postar, transmitir, postar, compartilhar, repostar dado, texto, software, gráficos, sons, fotografias, vídeos, mensagens ou outro conteúdo que seja ilegal, ofensivo, impreciso, difamatório, obsceno, fraudulento, discriminatório,
-                ameaçador ou abusivo.<br><br>(b) É proibido vender, alugar, ceder, distribuir, copiar, alterar, transformar, reproduzir total ou parcialmente o conteúdo, plataforma, direitos, tecnologias, exceto se houver acordo específico entre parceiros
-                ELITE DATA.<br><br>(c) Não interferência no uso do SOFTWARE por outros USUÁRIOS.<br><br>(d) Não realizar postagens ou fazer upload de qualquer vírus, worms, arquivo corrompido ou outro software capaz de perturbar, incapacitar ou prejudicar
-                o funcionamento do SOFTWARE.<br><br>(e) Não cometer qualquer ato que comprometa ou tenha o intuito de prejudicar a segurança da rede (incluindo, sem limitação, phishing, hackers, fraudes na Internet, contendo ou supostamente espalhando
-                em sites ou espaços afins: vírus, cavalos de troia e códigos maliciosos, e supostamente atacando outros sites ou servidores por servidores virtuais, como scanning, sniffing, ARP deception e DOS ou outras técnicas que tenham o intuito de
-                afetar o funcionamento do produto).<br><br>(f) Cumprir estritamente com estes termos e quaisquer leis ou regulamentos aplicáveis.<br><br>(g) Não utilizar dados de terceiros ilicitamente para fraudar a contratação do SOFTWARE.<br><br>(h)
-                Não enviar ou transmitir conteúdo que o USUÁRIO não tenha direito de publicar ou transmitir sob qualquer lei ou sob relações contratuais ou fiduciárias (tais como informação privilegiada, informações confidenciais, etc.).<br><br>(i) Não
-                utilizar o SOFTWARE para solicitar, obter ou armazenar dados pessoais ou senhas de outros USUÁRIOS.<br><br>(j) Não contornar quaisquer restrições territoriais aplicadas pela ELITE DATA no acesso ao serviço.<br><br>(k) O uso e o registro
-                da marca ELITE DATA e das marcas de SOFTWAREs são reservados exclusivamente à ELITE DATA. O USUÁRIO não poderá registrar ou usar o nome da empresa, razão social, nome comercial, nome de domínio ou outro nome, indicação ou descrição do
-                nome ELITE DATA ou algum outro nome semelhante a ele ou qualquer nome de SOFTWARE ELITE DATA.<br><br>(l) Para uso do SOFTWARE o USUÁRIO assume o compromisso de respeitar o que dispõe a legislação brasileira referente ao tema. O uso fora
-                do território brasileiro deve atender o que determina a legislação local.<br><br>(m) Permitir que a ELITE DATA acesse a qualquer momento os equipamentos configurados no SOFTWARE para o caso de eventual necessidade a ser previamente alinhada
-                com o USUÁRIO.<br><br>(n) Comunicar à ELITE DATA qualquer intervenção ou violação por terceiros de que tenha conhecimento.<br><br>(o) Responsabilizar-se única e exclusivamente pela visualização e conteúdo por ele salvo e/ou sua divulgação,
-                devendo utilizá-los para fins lícitos, não tendo a ELITE DATA nenhuma obrigação em relação ao conteúdo do USUÁRIO.</p>
-            <p class="legal-des"><br>5.4. O USUÁRIO declara ainda estar ciente de que, sem o consentimento da ELITE DATA, quaisquer informações e feedbacks fornecidos pelo USUÁRIO não podem ser direta ou indiretamente divulgados ou transmitidos em qualquer mídia nem reescritos
-                ou reeditados com a finalidade de transmitir ou liberar ou ser usado para qualquer outra finalidade.</p>
-            <p>&nbsp;</p>
-            <h3>6. ALTERAÇÕES DESTE TERMO</h3>
-            <p class="legal-des"><br>6.1. A ELITE DATA reserva-se ao direito de, a qualquer tempo, modificar estes termos, seja incluindo, removendo ou alterando quaisquer de suas condições. As mudanças ocorrerão sempre para refletir as alterações sofridas pelo SOFTWARE,
-                como incluir ou excluir funcionalidades, seja por motivos jurídicos, regulatórios ou de segurança.</p>
-            <p class="legal-des"><br>6.2. Quando ocorrerem mudanças nestes termos ou ainda em qualquer Termo adicional especifico, será solicitado ao USUÁRIO novo aceite em caso de mudança relevante, hipótese em que este será avisado e terá a oportunidade de analisar as mudanças,
-                exceto em situações urgentes, como para evitar abusos autorais ou responder a requisitos legais. Caso o USUÁRIO não concorde com os novos Termos, ele deverá cessar imediatamente o uso do SOFTWARE e poderá, caso queira, manifestar oposição
-                a quaisquer dos Termos modificados, desde que o faça por escrito, através do site www.ELITE DATA.com.br. Ao continuar com o uso do SOFTWARE, o USUÁRIO terá aceitado os termos atualizados e concordado em cumpri-los.</p>
-            <p class="legal-des"><br>6.3. A ELITE DATA pode, de tempos em tempos, modificar ou descontinuar (temporária ou permanentemente) a distribuição ou a atualização desse SOFTWARE. Exceto na medida exigida pela lei aplicável, não temos obrigação de fornecer suporte,
-                novo download, nem a substituição. A ELITE DATA poderá lançar recursos ou SOFTWAREs em uma versão prévia ou beta, que talvez não funcionem corretamente ou da mesma forma que a versão final possa funcionar.</p>
-            <p>&nbsp;</p>
-            <p class="legal-des">6.4. Ao aderir aos Termos, o USUÁRIO concorda em receber comunicações da ELITE DATA de forma eletrônica (termos e condições, acordos, notificações, divulgações e outras comunicações da ELITE DATA), seja por e-mail ou comunicação interna no
-                próprio SOFTWARE e que, dessa forma estabelecida, cumprem com os requisitos legais.</p>
-            <p class="legal-des"><br>6.5. O USUÁRIO compromete-se a manter o SOFTWARE atualizado de acordo com as versões disponibilizadas pela ELITE DATA.</p>
-            <p class="legal-des"><br>6.6. Fica entendido e acertado entre as partes que o SOFTWARE poderá ser ofertado inicialmente em caráter gratuito e, posteriormente, se tornar pago, o que será devidamente comunicado ao USUÁRIO com aviso prévio.</p>
-            <p>&nbsp;</p>
-            <h3>7. ISENÇÃO DE GARANTIAS</h3>
-            <p class="legal-des"><br>7.1. O USUÁRIO exime expressamente a ELITE DATA de qualquer responsabilidade por danos associados ao uso deste SOFTWARE ou por alguma imprecisão ou erro gráfico ou tipográfico de informações (i) presentes em websites ELITE DATA; (ii) afetos
-                a fatores extrínsecos ao SOFTWARE; (iii) presentes nos softwares, nos serviços e nas funcionalidades contidos no SOFTWARE, seja por problemas técnicos, indisponibilidade de conexão com servidores, sistemas operacionais, software de acesso,
-                qualquer bug, vírus, cavalo de troia ou similares que possam ser transmitidos para/ou através de software pelo USUÁRIO e/ou por quaisquer terceiros, falta de energia ou por problemas de conexão, por aceitação dos Termos, independentemente
-                de o USUÁRIO ser ou alertado sobre a possibilidade de tais danos.</p>
-            <p class="legal-des"><br>7.2. Com exceção do estabelecido neste documento, não há outras garantias, condições ou promessas vinculadas ao SOFTWARE. Neste sentido:</p>
-            <p class="legal-des-in"><br>I. A ELITE DATA não garante, declara ou assegura que o uso desse SOFTWARE será ininterrupto ou livre de erros, e o USUÁRIO concorda que a ELITE DATA poderá remover por períodos indefinidos ou cancelar esse SOFTWARE a qualquer momento.<br><br>II.
-                A ELITE DATA não garante, declara nem assegura que esse SOFTWARE esteja livre de perda, interrupção, ataque, vírus, interferência, pirataria ou outra ameaça à segurança e isenta-se de qualquer responsabilidade em relação a essas questões.
-                O USUÁRIO é responsável pelo backup dos arquivos armazenados em seu dispositivo, pela segurança da rede, pela proteção de senhas e demais configurações de segurança da informação.<br><br>III. Em hipótese alguma a ELITE DATA, bem como seus
-                diretores, executivos, funcionários, afiliadas, agentes, contratados responsabilizar-se-ão por perdas ou danos causados pelo uso indevido do SOFTWARE e descumprimento destes termos.<br><br>IV. A ELITE DATA poderá realizar atualizações
-                automáticas no SOFTWARE sem que gerem qualquer direito de indenização ao USUÁRIO.</p>
-            <p class="legal-des"><br>7.3. Esse SOFTWARE estará em contínuo desenvolvimento e pode conter erros, por isso, o uso é fornecido “no estado em que se encontra” e sob risco do USUÁRIO.</p>
-            <p class="legal-des"><br>7.4. Na extensão máxima permitida pela legislação aplicável, a ELITE DATA e seus fornecedores isentam-se de quaisquer garantias e condições, incluindo garantias de comercialização, adequação a um propósito específico, titularidade e não
-                violação no que diz respeito ao SOFTWARE e a qualquer um de seus componentes ou ainda à prestação ou não de serviços de suporte.</p>
-            <p class="legal-des"><br>7.5. O USUÁRIO concorda em defender, indenizar e isentar a ELITE DATA, seus representantes legais, suas subsidiárias e parceiros comerciais de toda e qualquer ação judicial, danos, obrigações, perdas, despesas, custas e honorários advocatícios
-                oriundos do uso e acesso ao SOFTWARE, quando da violação destes termos ou de qualquer direito de terceiros, sem se limitar a direitos autorais, de propriedade intelectual ou de privacidade.</p>
-            <p>&nbsp;</p>
-            <h3>8. LIMITAÇÃO DE RESPONSABILIDADE</h3>
-            <p class="legal-des"><br>8.1. EM NENHUM CASO, A ELITE DATA SERÁ RESPONSÁVEL POR DANOS PESSOAIS OU QUALQUER PREJUÍZO INCIDENTAL, ESPECIAL, INDIRETO OU CONSEQUENTE, INCLUINDO, SEM LIMITAÇÃO, PREJUÍZOS POR LUCROS CESSANTES, CORRUPÇÃO OU PERDA DE DADOS, FALHA DE TRANSMISSÃO
-                OU RECEPÇÃO DE DADOS, VAZAMENTO DE INFORMAÇÕES POR TERCEIROS, NÃO CONTINUIDADE DO NEGÓCIO OU QUALQUER OUTRO PREJUÍZO OU PERDA COMERCIAL, DECORRENTES OU RELACIONADOS AO USO DO SOFTWARE OU A SUA INABILIDADE EM USAR O SOFTWARE OU EQUIPAMENTOS
-                A ELE INTERLIGADOS. A ELITE DATA ISENTA-SE DE RESPONSABILIDADE CASO TERCEIROS DECIDAM PELO USO DESTE SOFTWARE PARA PRESTAR SERVIÇOS A CLIENTES FINAIS.</p>
-            <p class="legal-des"><br>8.2. DE IGUAL MODO, AS SITUAÇÕES A SEGUIR ESTÃO EXCLUÍDAS DA RESPONSABILIDADE DA ELITE DATA: FALHAS, BLOQUEIOS, SUSPENSÕES OU INTERRUPÇÕES CAUSADAS POR: (I) INFRAESTRUTURA DO USUÁRIO, INCLUINDO OS SERVIÇOS DE TELECOMUNICAÇÕES OU INTERNET
-                POR ELE CONTRATADOS E OUTROS PROGRAMAS OU EQUIPAMENTOS DO USUÁRIO; (II) INCOMPATIBILIDADE ENTRE O SOFTWARE E EVENTUAIS PROGRAMAS OU EQUIPAMENTOS UTILIZADOS PELO USUÁRIO; (III) ATENDIMENTO DE DETERMINAÇÃO DE AUTORIDADES COMPETENTES, OU
-                POR DESCUMPRIMENTO DE CLÁUSULAS DO PRESENTE TERMO.</p>
-            <p class="legal-des"><br>8.3. O SOFTWARE DA ELITE DATA PODE, EVENTUALMENTE, DE ACORDO COM AS SUAS ESPECIFICAÇÕES, POSSIBILITAR INTEGRAÇÕES COM OUTROS SOFTWARES DE TERCEIROS, ENTRETANTO, CABE AO USUÁRIO AVALIAR SEUS RESPECTIVOS TERMOS DE USO, POLÍTICAS DE PRIVACIDADE
-                E FUNCIONALIDADES, TENDO EM VISTA QUE A ELITE DATA NÃO ASSUME QUALQUER RESPONSABILIDADE RELACIONADA A SOFTWARE DE TERCEIROS OU A EVENTUAIS IMPACTOS DE TAIS SOFTWARES NO SOFTWARE DA ELITE DATA.</p>
-            <p class="legal-des"><br>8.4. NOS CASOS EM QUE A ELITE DATA FOR CONSIDERADA RESPONSÁVEL, EVENTUAIS INDENIZAÇÕES ESTARÃO LIMITADAS, EM SUA TOTALIDADE, AOS VALORES RECEBIDOS PELA ELITE DATA EM RELAÇÃO AO OBJETO DE DESAVENÇA INDENIZÁVEL.</p>
-            <p>&nbsp;</p>
-            <h3>9. RESCISÃO</h3>
-            <p class="legal-des"><br>9.1. Este contrato poderá ser rescindido por interesse das partes a qualquer instante ou por descumprimento de qualquer cláusula.</p>
-            <p>&nbsp;</p>
-            <h3>10. FORO</h3>
-            <p class="legal-des"><br>10.1. Estes termos serão regidos e interpretados de acordo com as leis do Brasil. As partes se submetem à jurisdição exclusiva dos tribunais do Brasil. Para dirimir eventuais dúvidas acerca do presente instrumento, bem como de qualquer
-                evento relacionado à utilização de nossos serviços, fica desde logo eleito o foro da comarca de São José, estado de Santa Catarina, por mais privilegiado que outro foro seja. Se o USUÁRIO ainda possuir alguma dúvida sobre a forma de utilização
-                de nosso SOFTWARE, sobre nossos Termos ou sobre nossa Política de privacidade, deve entrar em contato com a ELITE DATA.</p>
-            <p class="legal-des"><br>10.2. Antes de qualquer medida judicial, buscaremos solucionar qualquer divergência por meio de negociação amigável entre as partes. Qualquer dúvida, entrar em contato com: <a target="_blank" style="display:inline" href="mailto:info@EliteData.com">info@EliteData.com</a>.</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-
-        </article>
+        <p>&nbsp;</p>
+        <p class="legal-des">
+          O que você precisa saber antes de ler os termos e condições gerais de
+          uso de software da ELITE DATA?<br />Usamos a palavra SOFTWARE como um
+          termo genérico para definir todas as soluções de software e
+          ferramentas afins, pagas ou gratuitas da ELITE DATA, podendo ser um
+          serviço em nuvem, uma plataforma corporativa, um aplicativo para
+          download, uma licença de software (embarcado no hardware ou disponível
+          para download), um firmware de hardware, um website, uma landing page,
+          um módulo ou biblioteca de software (SDK e APIs, por exemplo).
+        </p>
+        <p class="legal-des">
+          <br />TERMOS E CONDIÇÕES GERAIS: LICENÇA DE USO DE SOFTWARE ELITE DATA
+        </p>
+        <p class="legal-des">
+          <br />PARA UTILIZAR O PORTAL ELITE DATA, É INDISPENSÁVEL A ACEITAÇÃO
+          DOS TERMOS DESCRITOS A SEGUIR.
+        </p>
+        <p class="legal-des">
+          <br />Estes termos de uso de software ELITE DATA (TERMOS) são um
+          acordo legal entre o USUÁRIO e a ELITE DATA S/A que define as condutas
+          de relacionamento que devem ser seguidas pelo USUÁRIO para uso do
+          SOFTWARE a que os presentes TERMOS referenciam.
+        </p>
+        <p class="legal-des">
+          <br />O USUÁRIO declara que fez a leitura completa e atenta das regras
+          deste documento, estando plenamente ciente e concordando expressamente
+          com os termos aqui estipulados. Ainda, o USUÁRIO declara estar ciente
+          de que, ao utilizar o SOFTWARE, estará sujeito aos termos, concordando
+          com suas disposições. O USUÁRIO deverá também efetuar a leitura e
+          estar ciente da política de proteção de dados pessoais da ELITE DATA.
+        </p>
+        <p class="legal-des">
+          <br />Caso o USUÁRIO não concorde com os presentes termos, a
+          utilização do SOFTWARE deve ser imediatamente interrompida.
+        </p>
+        <p class="legal-des">
+          <br />Ao fazer uso do SOFTWARE, o USUÁRIO declara ainda que possui as
+          condições legais para praticar os atos da vida civil sem a dependência
+          de terceiros.
+        </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <h3>1. ACEITE</h3>
+        <p>&nbsp;</p>
+        <p class="legal-des">
+          1.1. Ao fazer uso do SOFTWARE ELITE DATA, o USUÁRIO manifesta sua
+          concordância em se submeter a todas as condições destes termos, bem
+          como plena ciência de todas as responsabilidades a ele vinculadas.
+        </p>
+        <p class="legal-des">
+          <br />1.2. No primeiro acesso ao SOFTWARE, o USUÁRIO deverá alterar a
+          senha padrão ou cadastrar uma senha pela primeira vez, dentro dos
+          padrões de segurança recomendados. O USUÁRIO será exclusivamente
+          responsável pelo uso e armazenagem de sua senha de acesso.
+        </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <h3>2. CADASTRO</h3>
+        <p>&nbsp;</p>
+        <p class="legal-des">
+          2.1. Ao fazer uso do SOFTWARE, poderá ser solicitado um cadastro de
+          usuário, sendo de responsabilidade do USUÁRIO fornecer as informações
+          solicitadas, bem como garantir que os dados informados sejam fiéis e
+          verdadeiros (assumindo a responsabilidade cível e criminal pelas
+          informações prestadas), comprometendo-se a mantê-los sempre
+          atualizados e declarando estar ciente de que esses dados poderão ser
+          verificados a qualquer momento.
+        </p>
+        <p class="legal-des">
+          <br />2.2. A ELITE DATA não será responsável pelas informações
+          prestadas pelo USUÁRIO, mas se reserva ao direito de verificar, a
+          qualquer momento, a veracidade de tais informações e solicitar, a seu
+          exclusivo critério, a documentação que julgar necessária para a devida
+          comprovação das informações prestadas.
+        </p>
+        <p class="legal-des">
+          <br />2.3. Caso seja detectado uso ilegal do SOFTWARE, o acesso a ele
+          será automaticamente bloqueado, não cabendo ao USUÁRIO, por esse
+          motivo, qualquer direito de indenização ou ressarcimento.
+        </p>
+        <p class="legal-des">
+          <br />2.4. O titular e administrador da conta será aquele definido no
+          momento do cadastro de usuário.
+        </p>
+        <p class="legal-des">
+          <br />2.5. A conta é pessoal e intransferível e poderá ser acessada
+          unicamente mediante a utilização do USUÁRIO e senha criados pelo
+          próprio USUÁRIO.
+        </p>
+        <p class="legal-des">
+          <br />2.6. O USUÁRIO responsabiliza-se inteiramente por todas as
+          atividades associadas a sua conta.
+        </p>
+        <p>&nbsp;</p>
+        <h3>3. PROPRIEDADE INTELECTUAL</h3>
+        <p class="legal-des">
+          <br />3.1. A ELITE DATA detém todos os direitos de propriedade
+          intelectual de seu SOFTWARE, ressalvados aqueles desenvolvidos e
+          comercializados por terceiros, sendo assim, ao aceitar os termos
+          previstos neste documento, o USUÁRIO declara estar ciente de que não
+          adquire direito de uso das marcas registradas ou de qualquer outro
+          item de propriedade intelectual da ELITE DATA ou de terceiros, ou
+          mesmo qualquer direito sobre o SOFTWARE ou item relacionado a ele ou a
+          qualquer componente dele, além dos direitos expressamente relacionados
+          ao USUÁRIO nestes termos ou em qualquer outro contrato mutuamente
+          acordado por escrito entre as a ELITE DATA e o USUÁRIO.
+        </p>
+        <p class="legal-des">
+          <br />3.2. O USUÁRIO compromete-se a notificar prontamente a ELITE
+          DATA, por escrito, de qualquer suspeita de uso não autorizado ou
+          infração aos direitos de propriedade intelectual da ELITE DATA de que
+          venha a ter conhecimento.
+        </p>
+        <p class="legal-des">
+          <br />3.3. Se solicitado pela ELITE DATA, o USUÁRIO deverá auxiliar a
+          ELITE DATA em quaisquer investigações, negociações ou procedimentos
+          judiciais em virtude de qualquer alegação de uso indevido ou de
+          violação aos direitos de propriedade intelectual da ELITE DATA.
+        </p>
+        <p class="legal-des">
+          <br />3.4. O USUÁRIO, com o aceite do presente contrato, AUTORIZA a
+          ELITE DATA a fazer uso dos direitos de propriedade intelectual de que
+          é titular, tais como marca, logomarca, imagem, voz, nome empresarial
+          ou site de propriedade do USUÁRIO, de forma gratuita, a título
+          universal, de forma irrevogável, em todo o território nacional e no
+          exterior, com a finalidade de divulgação positiva ao público em geral,
+          inclusive participação em gravações e fotografias em treinamentos,
+          palestras, com caráter informativo, educativo, publicitário e/ou
+          comercial, associado à ELITE DATA, seus cursos, treinamentos, soluções
+          e empresas do Grupo.
+        </p>
+        <p class="legal-des">
+          <br />3.5. A ELITE DATA reserva para si todos os direitos que não
+          foram expressamente concedidos por estes TERMOS.
+        </p>
+        <p>&nbsp;</p>
+        <h3>4. PROTEÇÃO DE PRIVACIDADE</h3>
+        <p class="legal-des">
+          <br />4.1. A ELITE DATA respeita integralmente todos os princípios de
+          proteção dos dados pessoais do USUÁRIO; proteger suas informações
+          pessoais é um princípio básico da ELITE DATA.
+        </p>
+        <p class="legal-des">
+          <br />4.2. A ELITE DATA tem sua Política de Privacidade, por meio da
+          qual divulga informações importantes sobre coleta, uso,
+          compartilhamento, armazenamento e exclusão de informações pessoais e
+          outros aspectos relacionados aos seus interesses vitais.
+        </p>
+        <p class="legal-des">
+          <br />4.3. O USUÁRIO está ciente e de acordo de que, a qualquer
+          momento, suas informações serão processadas de acordo com a Política
+          de Privacidade ELITE DATA.
+        </p>
+        <p>&nbsp;</p>
+        <h3>5. COMPROMISSOS DO USUÁRIO</h3>
+        <p class="legal-des">
+          <br />5.1. É vedado copiar ou reproduzir de qualquer outra forma as
+          informações, manuais, literatura técnica e outros documentos
+          fornecidos pela ELITE DATA, exceto para o cumprimento de obrigações
+          estabelecidas nos termos deste instrumento, mediante prévia
+          autorização e de acordo com a legislação aplicável relativamente a
+          direitos autorais e propriedade intelectual.
+        </p>
+        <p class="legal-des">
+          <br />5.2. As obrigações estabelecidas na presente cláusula se aplicam
+          ao USUÁRIO durante a vigência do presente instrumento, bem como após
+          seu término.
+        </p>
+        <p>&nbsp;</p>
+        <p class="legal-des">
+          5.3. Ao utilizar o SOFTWARE, o USUÁRIO concorda com as seguintes
+          diretrizes:
+        </p>
+        <p class="legal-des-in">
+          <br /><br />(a) Não postar, transmitir, postar, compartilhar, repostar
+          dado, texto, software, gráficos, sons, fotografias, vídeos, mensagens
+          ou outro conteúdo que seja ilegal, ofensivo, impreciso, difamatório,
+          obsceno, fraudulento, discriminatório, ameaçador ou abusivo.<br /><br />(b)
+          É proibido vender, alugar, ceder, distribuir, copiar, alterar,
+          transformar, reproduzir total ou parcialmente o conteúdo, plataforma,
+          direitos, tecnologias, exceto se houver acordo específico entre
+          parceiros ELITE DATA.<br /><br />(c) Não interferência no uso do
+          SOFTWARE por outros USUÁRIOS.<br /><br />(d) Não realizar postagens ou
+          fazer upload de qualquer vírus, worms, arquivo corrompido ou outro
+          software capaz de perturbar, incapacitar ou prejudicar o funcionamento
+          do SOFTWARE.<br /><br />(e) Não cometer qualquer ato que comprometa ou
+          tenha o intuito de prejudicar a segurança da rede (incluindo, sem
+          limitação, phishing, hackers, fraudes na Internet, contendo ou
+          supostamente espalhando em sites ou espaços afins: vírus, cavalos de
+          troia e códigos maliciosos, e supostamente atacando outros sites ou
+          servidores por servidores virtuais, como scanning, sniffing, ARP
+          deception e DOS ou outras técnicas que tenham o intuito de afetar o
+          funcionamento do produto).<br /><br />(f) Cumprir estritamente com
+          estes termos e quaisquer leis ou regulamentos aplicáveis.<br /><br />(g)
+          Não utilizar dados de terceiros ilicitamente para fraudar a
+          contratação do SOFTWARE.<br /><br />(h) Não enviar ou transmitir
+          conteúdo que o USUÁRIO não tenha direito de publicar ou transmitir sob
+          qualquer lei ou sob relações contratuais ou fiduciárias (tais como
+          informação privilegiada, informações confidenciais, etc.).<br /><br />(i)
+          Não utilizar o SOFTWARE para solicitar, obter ou armazenar dados
+          pessoais ou senhas de outros USUÁRIOS.<br /><br />(j) Não contornar
+          quaisquer restrições territoriais aplicadas pela ELITE DATA no acesso
+          ao serviço.<br /><br />(k) O uso e o registro da marca ELITE DATA e
+          das marcas de SOFTWAREs são reservados exclusivamente à ELITE DATA. O
+          USUÁRIO não poderá registrar ou usar o nome da empresa, razão social,
+          nome comercial, nome de domínio ou outro nome, indicação ou descrição
+          do nome ELITE DATA ou algum outro nome semelhante a ele ou qualquer
+          nome de SOFTWARE ELITE DATA.<br /><br />(l) Para uso do SOFTWARE o
+          USUÁRIO assume o compromisso de respeitar o que dispõe a legislação
+          brasileira referente ao tema. O uso fora do território brasileiro deve
+          atender o que determina a legislação local.<br /><br />(m) Permitir
+          que a ELITE DATA acesse a qualquer momento os equipamentos
+          configurados no SOFTWARE para o caso de eventual necessidade a ser
+          previamente alinhada com o USUÁRIO.<br /><br />(n) Comunicar à ELITE
+          DATA qualquer intervenção ou violação por terceiros de que tenha
+          conhecimento.<br /><br />(o) Responsabilizar-se única e exclusivamente
+          pela visualização e conteúdo por ele salvo e/ou sua divulgação,
+          devendo utilizá-los para fins lícitos, não tendo a ELITE DATA nenhuma
+          obrigação em relação ao conteúdo do USUÁRIO.
+        </p>
+        <p class="legal-des">
+          <br />5.4. O USUÁRIO declara ainda estar ciente de que, sem o
+          consentimento da ELITE DATA, quaisquer informações e feedbacks
+          fornecidos pelo USUÁRIO não podem ser direta ou indiretamente
+          divulgados ou transmitidos em qualquer mídia nem reescritos ou
+          reeditados com a finalidade de transmitir ou liberar ou ser usado para
+          qualquer outra finalidade.
+        </p>
+        <p>&nbsp;</p>
+        <h3>6. ALTERAÇÕES DESTE TERMO</h3>
+        <p class="legal-des">
+          <br />6.1. A ELITE DATA reserva-se ao direito de, a qualquer tempo,
+          modificar estes termos, seja incluindo, removendo ou alterando
+          quaisquer de suas condições. As mudanças ocorrerão sempre para
+          refletir as alterações sofridas pelo SOFTWARE, como incluir ou excluir
+          funcionalidades, seja por motivos jurídicos, regulatórios ou de
+          segurança.
+        </p>
+        <p class="legal-des">
+          <br />6.2. Quando ocorrerem mudanças nestes termos ou ainda em
+          qualquer Termo adicional especifico, será solicitado ao USUÁRIO novo
+          aceite em caso de mudança relevante, hipótese em que este será avisado
+          e terá a oportunidade de analisar as mudanças, exceto em situações
+          urgentes, como para evitar abusos autorais ou responder a requisitos
+          legais. Caso o USUÁRIO não concorde com os novos Termos, ele deverá
+          cessar imediatamente o uso do SOFTWARE e poderá, caso queira,
+          manifestar oposição a quaisquer dos Termos modificados, desde que o
+          faça por escrito, através do site www.ELITE DATA.com.br. Ao continuar
+          com o uso do SOFTWARE, o USUÁRIO terá aceitado os termos atualizados e
+          concordado em cumpri-los.
+        </p>
+        <p class="legal-des">
+          <br />6.3. A ELITE DATA pode, de tempos em tempos, modificar ou
+          descontinuar (temporária ou permanentemente) a distribuição ou a
+          atualização desse SOFTWARE. Exceto na medida exigida pela lei
+          aplicável, não temos obrigação de fornecer suporte, novo download, nem
+          a substituição. A ELITE DATA poderá lançar recursos ou SOFTWAREs em
+          uma versão prévia ou beta, que talvez não funcionem corretamente ou da
+          mesma forma que a versão final possa funcionar.
+        </p>
+        <p>&nbsp;</p>
+        <p class="legal-des">
+          6.4. Ao aderir aos Termos, o USUÁRIO concorda em receber comunicações
+          da ELITE DATA de forma eletrônica (termos e condições, acordos,
+          notificações, divulgações e outras comunicações da ELITE DATA), seja
+          por e-mail ou comunicação interna no próprio SOFTWARE e que, dessa
+          forma estabelecida, cumprem com os requisitos legais.
+        </p>
+        <p class="legal-des">
+          <br />6.5. O USUÁRIO compromete-se a manter o SOFTWARE atualizado de
+          acordo com as versões disponibilizadas pela ELITE DATA.
+        </p>
+        <p class="legal-des">
+          <br />6.6. Fica entendido e acertado entre as partes que o SOFTWARE
+          poderá ser ofertado inicialmente em caráter gratuito e,
+          posteriormente, se tornar pago, o que será devidamente comunicado ao
+          USUÁRIO com aviso prévio.
+        </p>
+        <p>&nbsp;</p>
+        <h3>7. ISENÇÃO DE GARANTIAS</h3>
+        <p class="legal-des">
+          <br />7.1. O USUÁRIO exime expressamente a ELITE DATA de qualquer
+          responsabilidade por danos associados ao uso deste SOFTWARE ou por
+          alguma imprecisão ou erro gráfico ou tipográfico de informações (i)
+          presentes em websites ELITE DATA; (ii) afetos a fatores extrínsecos ao
+          SOFTWARE; (iii) presentes nos softwares, nos serviços e nas
+          funcionalidades contidos no SOFTWARE, seja por problemas técnicos,
+          indisponibilidade de conexão com servidores, sistemas operacionais,
+          software de acesso, qualquer bug, vírus, cavalo de troia ou similares
+          que possam ser transmitidos para/ou através de software pelo USUÁRIO
+          e/ou por quaisquer terceiros, falta de energia ou por problemas de
+          conexão, por aceitação dos Termos, independentemente de o USUÁRIO ser
+          ou alertado sobre a possibilidade de tais danos.
+        </p>
+        <p class="legal-des">
+          <br />7.2. Com exceção do estabelecido neste documento, não há outras
+          garantias, condições ou promessas vinculadas ao SOFTWARE. Neste
+          sentido:
+        </p>
+        <p class="legal-des-in">
+          <br />I. A ELITE DATA não garante, declara ou assegura que o uso desse
+          SOFTWARE será ininterrupto ou livre de erros, e o USUÁRIO concorda que
+          a ELITE DATA poderá remover por períodos indefinidos ou cancelar esse
+          SOFTWARE a qualquer momento.<br /><br />II. A ELITE DATA não garante,
+          declara nem assegura que esse SOFTWARE esteja livre de perda,
+          interrupção, ataque, vírus, interferência, pirataria ou outra ameaça à
+          segurança e isenta-se de qualquer responsabilidade em relação a essas
+          questões. O USUÁRIO é responsável pelo backup dos arquivos armazenados
+          em seu dispositivo, pela segurança da rede, pela proteção de senhas e
+          demais configurações de segurança da informação.<br /><br />III. Em
+          hipótese alguma a ELITE DATA, bem como seus diretores, executivos,
+          funcionários, afiliadas, agentes, contratados responsabilizar-se-ão
+          por perdas ou danos causados pelo uso indevido do SOFTWARE e
+          descumprimento destes termos.<br /><br />IV. A ELITE DATA poderá
+          realizar atualizações automáticas no SOFTWARE sem que gerem qualquer
+          direito de indenização ao USUÁRIO.
+        </p>
+        <p class="legal-des">
+          <br />7.3. Esse SOFTWARE estará em contínuo desenvolvimento e pode
+          conter erros, por isso, o uso é fornecido “no estado em que se
+          encontra” e sob risco do USUÁRIO.
+        </p>
+        <p class="legal-des">
+          <br />7.4. Na extensão máxima permitida pela legislação aplicável, a
+          ELITE DATA e seus fornecedores isentam-se de quaisquer garantias e
+          condições, incluindo garantias de comercialização, adequação a um
+          propósito específico, titularidade e não violação no que diz respeito
+          ao SOFTWARE e a qualquer um de seus componentes ou ainda à prestação
+          ou não de serviços de suporte.
+        </p>
+        <p class="legal-des">
+          <br />7.5. O USUÁRIO concorda em defender, indenizar e isentar a ELITE
+          DATA, seus representantes legais, suas subsidiárias e parceiros
+          comerciais de toda e qualquer ação judicial, danos, obrigações,
+          perdas, despesas, custas e honorários advocatícios oriundos do uso e
+          acesso ao SOFTWARE, quando da violação destes termos ou de qualquer
+          direito de terceiros, sem se limitar a direitos autorais, de
+          propriedade intelectual ou de privacidade.
+        </p>
+        <p>&nbsp;</p>
+        <h3>8. LIMITAÇÃO DE RESPONSABILIDADE</h3>
+        <p class="legal-des">
+          <br />8.1. EM NENHUM CASO, A ELITE DATA SERÁ RESPONSÁVEL POR DANOS
+          PESSOAIS OU QUALQUER PREJUÍZO INCIDENTAL, ESPECIAL, INDIRETO OU
+          CONSEQUENTE, INCLUINDO, SEM LIMITAÇÃO, PREJUÍZOS POR LUCROS CESSANTES,
+          CORRUPÇÃO OU PERDA DE DADOS, FALHA DE TRANSMISSÃO OU RECEPÇÃO DE
+          DADOS, VAZAMENTO DE INFORMAÇÕES POR TERCEIROS, NÃO CONTINUIDADE DO
+          NEGÓCIO OU QUALQUER OUTRO PREJUÍZO OU PERDA COMERCIAL, DECORRENTES OU
+          RELACIONADOS AO USO DO SOFTWARE OU A SUA INABILIDADE EM USAR O
+          SOFTWARE OU EQUIPAMENTOS A ELE INTERLIGADOS. A ELITE DATA ISENTA-SE DE
+          RESPONSABILIDADE CASO TERCEIROS DECIDAM PELO USO DESTE SOFTWARE PARA
+          PRESTAR SERVIÇOS A CLIENTES FINAIS.
+        </p>
+        <p class="legal-des">
+          <br />8.2. DE IGUAL MODO, AS SITUAÇÕES A SEGUIR ESTÃO EXCLUÍDAS DA
+          RESPONSABILIDADE DA ELITE DATA: FALHAS, BLOQUEIOS, SUSPENSÕES OU
+          INTERRUPÇÕES CAUSADAS POR: (I) INFRAESTRUTURA DO USUÁRIO, INCLUINDO OS
+          SERVIÇOS DE TELECOMUNICAÇÕES OU INTERNET POR ELE CONTRATADOS E OUTROS
+          PROGRAMAS OU EQUIPAMENTOS DO USUÁRIO; (II) INCOMPATIBILIDADE ENTRE O
+          SOFTWARE E EVENTUAIS PROGRAMAS OU EQUIPAMENTOS UTILIZADOS PELO
+          USUÁRIO; (III) ATENDIMENTO DE DETERMINAÇÃO DE AUTORIDADES COMPETENTES,
+          OU POR DESCUMPRIMENTO DE CLÁUSULAS DO PRESENTE TERMO.
+        </p>
+        <p class="legal-des">
+          <br />8.3. O SOFTWARE DA ELITE DATA PODE, EVENTUALMENTE, DE ACORDO COM
+          AS SUAS ESPECIFICAÇÕES, POSSIBILITAR INTEGRAÇÕES COM OUTROS SOFTWARES
+          DE TERCEIROS, ENTRETANTO, CABE AO USUÁRIO AVALIAR SEUS RESPECTIVOS
+          TERMOS DE USO, POLÍTICAS DE PRIVACIDADE E FUNCIONALIDADES, TENDO EM
+          VISTA QUE A ELITE DATA NÃO ASSUME QUALQUER RESPONSABILIDADE
+          RELACIONADA A SOFTWARE DE TERCEIROS OU A EVENTUAIS IMPACTOS DE TAIS
+          SOFTWARES NO SOFTWARE DA ELITE DATA.
+        </p>
+        <p class="legal-des">
+          <br />8.4. NOS CASOS EM QUE A ELITE DATA FOR CONSIDERADA RESPONSÁVEL,
+          EVENTUAIS INDENIZAÇÕES ESTARÃO LIMITADAS, EM SUA TOTALIDADE, AOS
+          VALORES RECEBIDOS PELA ELITE DATA EM RELAÇÃO AO OBJETO DE DESAVENÇA
+          INDENIZÁVEL.
+        </p>
+        <p>&nbsp;</p>
+        <h3>9. RESCISÃO</h3>
+        <p class="legal-des">
+          <br />9.1. Este contrato poderá ser rescindido por interesse das
+          partes a qualquer instante ou por descumprimento de qualquer cláusula.
+        </p>
+        <p>&nbsp;</p>
+        <h3>10. FORO</h3>
+        <p class="legal-des">
+          <br />10.1. Estes termos serão regidos e interpretados de acordo com
+          as leis do Brasil. As partes se submetem à jurisdição exclusiva dos
+          tribunais do Brasil. Para dirimir eventuais dúvidas acerca do presente
+          instrumento, bem como de qualquer evento relacionado à utilização de
+          nossos serviços, fica desde logo eleito o foro da comarca de São José,
+          estado de Santa Catarina, por mais privilegiado que outro foro seja.
+          Se o USUÁRIO ainda possuir alguma dúvida sobre a forma de utilização
+          de nosso SOFTWARE, sobre nossos Termos ou sobre nossa Política de
+          privacidade, deve entrar em contato com a ELITE DATA.
+        </p>
+        <p class="legal-des">
+          <br />10.2. Antes de qualquer medida judicial, buscaremos solucionar
+          qualquer divergência por meio de negociação amigável entre as partes.
+          Qualquer dúvida, entrar em contato com:
+          <a
+            target="_blank"
+            style="display: inline"
+            href="mailto:info@EliteData.com"
+            >info@EliteData.com</a
+          >.
+        </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </article>
     </main>
-
-
-
 
     <!-- 
     - #FOOTER
   -->
 
     <footer class="footer">
+      <div class="footer-top section">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">Elite Data</a>
 
-        <div class="footer-top section">
-            <div class="container">
+            <p class="text">Simplifique seus dados e expanda seus negócios.</p>
 
-                <div class="footer-brand">
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
 
-                    <a href="#" class="logo">Elite Data</a>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
 
-                    <p class="text">
-                        Simplifique seus dados e expanda seus negócios.
-                    </p>
+              <li>
+                <a
+                  href="https://wa.me/5533998081882"
+                  class="social-link"
+                  target="_blank"
+                >
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-                    <ul class="social-list">
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Nossos links</p>
+            </li>
 
-                        <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-facebook"></ion-icon>
-                            </a>
-                        </li>
+            <li>
+              <a href="index.html" class="footer-link">Início</a>
+            </li>
 
-                        <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-instagram"></ion-icon>
-                            </a>
-                        </li>
+            <li>
+              <a href="index.html#about" class="footer-link">Sobre nós</a>
+            </li>
 
-                        <li>
-                            <a href="https://wa.me/5533998081882" class="social-link" target="_blank">
-                                <ion-icon name="logo-whatsapp"></ion-icon>
-                            </a>
-                        </li>
+            <li>
+              <a href="index.html#services" class="footer-link">Serviços</a>
+            </li>
 
-                    </ul>
-
-                </div>
-
-                <ul class="footer-list">
-
-                    <li>
-                        <p class="footer-list-title">Nossos links</p>
-                    </li>
-
-                    <li>
-                        <a href="#" class="footer-link">Início</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="footer-link">Sobre nós</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="footer-link">Serviços</a>
-                    </li>
-
-                    <!--   <li>
+            <!--   <li>
                         <a href="#" class="footer-link">Time</a>
+                    </li>
+
+                    <li>
+                        <a href="#blog" class="footer-link">Blog</a>
                     </li>-->
+          </ul>
 
-                    <li>
-                        <a href="#" class="footer-link">Blog</a>
-                    </li>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Nossos Serviços</p>
+            </li>
 
-                </ul>
+            <li>
+              <a href="#" class="footer-link-srv" data-gallery="2"
+                >Dashboards</a
+              >
+            </li>
 
-                <ul class="footer-list">
+            <li>
+              <a href="#" class="footer-link-srv" data-gallery="1"
+                >Relatórios</a
+              >
+            </li>
 
-                    <li>
-                        <p class="footer-list-title">Nossos Serviços</p>
-                    </li>
+            <li>
+              <a href="#" class="footer-link-srv" data-gallery="3"
+                >Automações</a
+              >
+            </li>
 
-                    <li>
-                        <a href="#" class="footer-link">Dashboards</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="footer-link">Relatórios</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="footer-link">Automações</a>
-                    </li>
-
-                    <li>
+            <!-- <li>
                         <a href="#" class="footer-link">Integrações</a>
                     </li>
 
-                    <!-- <li>
+                    <li>
                         <a href="#" class="footer-link">App Design</a>
                     </li>-->
+          </ul>
 
-                </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Outros links</p>
+            </li>
 
-                <ul class="footer-list">
+            <li>
+              <a href="faq.html" class="footer-link">FAQ</a>
+            </li>
 
-                    <li>
-                        <p class="footer-list-title">Outros links</p>
-                    </li>
-
-                    <li>
-                        <a href="faq.html" class="footer-link">FAQ</a>
-                    </li>
-
-                    <!-- <li>
+            <!-- <li>
                         <a href="#" class="footer-link">Portfolio</a>
                     </li>-->
 
-                    <li>
-                        <a href="privacy.html" class="footer-link">Políticas de Privacidade</a>
-                    </li>
+            <li>
+              <a href="#" class="footer-link"
+                >Políticas de Privacidade</a
+              >
+            </li>
 
-                    <li>
-                        <a href="terms.html" class="footer-link">Termos de Uso</a>
-                    </li>
+            <li>
+              <a href="terms.html" class="footer-link">Termos de Uso</a>
+            </li>
 
-                    <li>
+            <!--   <li>
                         <a href="cookies.html" class="footer-link">Cookies</a>
-                    </li>
+                    </li> -->
+          </ul>
 
-                </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Fale conosco</p>
+            </li>
 
-                <ul class="footer-list">
+            <li class="footer-item">
+              <div class="footer-item-icon">
+                <ion-icon name="call"></ion-icon>
+              </div>
 
-                    <li>
-                        <p class="footer-list-title">Fale conosco</p>
-                    </li>
+              <div>
+                <a href="tel:+5533998081882" class="footer-item-link"
+                  >+55 33 99808-1882</a
+                >
+              </div>
+            </li>
 
-                    <li class="footer-item">
+            <li class="footer-item">
+              <div class="footer-item-icon">
+                <ion-icon name="mail"></ion-icon>
+              </div>
 
-                        <div class="footer-item-icon">
-                            <ion-icon name="call"></ion-icon>
-                        </div>
+              <div>
+                <a href="mailto:info@Elite Data.com" class="footer-item-link"
+                  >info@EliteData.com</a
+                >
+              </div>
+            </li>
 
-                        <div>
-                            <a href="tel:+5533998081882" class="footer-item-link">+55 33 99808-1882</a>
-                            <!-- <a href="tel:+5533998081882" class="footer-item-link">+55 33 99808-1882</a> -->
-                        </div>
+            <li class="footer-item">
+              <div class="footer-item-icon">
+                <ion-icon name="location"></ion-icon>
+              </div>
 
-                    </li>
-
-                    <li class="footer-item">
-
-                        <div class="footer-item-icon">
-                            <ion-icon name="mail"></ion-icon>
-                        </div>
-
-                        <div>
-                            <a href="mailto:info@Elite Data.com" class="footer-item-link">info@EliteData.com</a>
-                            <!-- ilto:help@Elite Data.com" class="footer-item-link">help@EliteData.com</a> -->
-                        </div>
-
-                    </li>
-
-                    <li class="footer-item">
-
-                        <div class="footer-item-icon">
-                            <ion-icon name="location"></ion-icon>
-                        </div>
-
-                        <address class="footer-item-link">
-              Rio de Janeiro, RJ, Brasil
-            </address>
-
-                    </li>
-
-                </ul>
-
-            </div>
+              <address class="footer-item-link">
+                Belo Horizonte, MG, Brasil
+              </address>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <div class="footer-bottom">
-            <p class="copyright">
-                &copy; 2025 <a href="#" class="copyright-link">TTT Company Inc</a>. All Right Reserved
-            </p>
-        </div>
-
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2025 <a href="#" class="copyright-link">TTT Company Inc</a>.
+          All Right Reserved
+        </p>
+      </div>
     </footer>
-
-
-
-
 
     <!-- 
     - #GO TO TOP
   -->
 
-    <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
-        <ion-icon name="arrow-up-outline"></ion-icon>
+    <a href="#top" class="go-top active" aria-label="Go To Top" data-go-top>
+      <ion-icon name="arrow-up-outline"></ion-icon>
     </a>
-
-
-
-
 
     <!-- 
     - custom js link
@@ -440,10 +733,13 @@
     <!-- 
     - ionicon link
   -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

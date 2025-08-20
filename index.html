@@ -1,782 +1,768 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elite Data</title>
 
     <!-- 
     - favicon
   -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
     <!-- 
     - custom css link
   -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- 
     - google font link
   -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body id="top">
-
+  <body id="top">
     <!-- 
     - #HEADER
   -->
 
     <header class="header" data-header>
-        <div class="container">
+      <div class="container">
+        <div class="overlay" data-overlay></div>
 
-            <div class="overlay" data-overlay></div>
+        <a href="#home">
+          <h1 class="logo">Elite Data</h1>
+        </a>
 
-            <a href="#home">
-                <h1 class="logo">Elite Data</h1>
-            </a>
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#home" class="logo">Elite Data</a>
 
-            <nav class="navbar" data-navbar>
+            <button
+              class="nav-close-btn"
+              aria-label="Close Menu"
+              data-nav-close-btn
+            >
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
 
-                <div class="navbar-top">
-                    <a href="#home" class="logo">Elite Data</a>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-navbar-link>Início</a>
+            </li>
 
-                    <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-                </div>
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link" data-navbar-link>Sobre</a>
+            </li>
 
-                <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#services" class="navbar-link" data-navbar-link
+                >Serviços</a
+              >
+            </li>
 
-                    <li class="navbar-item">
-                        <a href="#home" class="navbar-link" data-navbar-link>Início</a>
-                    </li>
+            <li class="navbar-item">
+              <a href="#features" class="navbar-link" data-navbar-link
+                >Soluções</a
+              >
+            </li>
 
-                    <li class="navbar-item">
-                        <a href="#about" class="navbar-link" data-navbar-link>Sobre</a>
-                    </li>
+            <li class="navbar-item">
+              <a href="#blog" class="navbar-link" data-navbar-link>Blog</a>
+            </li>
 
-                    <li class="navbar-item">
-                        <a href="#services" class="navbar-link" data-navbar-link>Serviços</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="#features" class="navbar-link" data-navbar-link>Soluções</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="#blog" class="navbar-link" data-navbar-link>Blog</a>
-                    </li>
-
-                    <!--<li class="navbar-item">
+            <!--<li class="navbar-item">
                         <a href="#" class="navbar-link" data-navbar-link>Fale Conosco</a>
                     </li>-->
+          </ul>
+        </nav>
 
-                </ul>
+        <div class="navbar-actions">
+          <a href="https://wa.me/5533998081882" class="btn" target="_blank">
+            <ion-icon
+              name="chevron-forward-outline"
+              aria-hidden="true"
+            ></ion-icon>
 
-            </nav>
+            <span>Faça uma cotação</span>
+          </a>
 
-
-            <div class="navbar-actions">
-                <a href="https://wa.me/5533998081882" class="btn" target="_blank">
-                    <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-
-                    <span>Faça uma cotação</span>
-                </a>
-
-                <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn="data-theme-btn">
-                        <span class="icon"></span>
-                    </button>
-            </div>
-
-            <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-        <ion-icon name="menu-outline"></ion-icon>
-      </button>
-
-
-
-
+          <button
+            class="theme-btn"
+            aria-label="Change Theme"
+            title="Change Theme"
+            data-theme-btn="data-theme-btn"
+          >
+            <span class="icon"></span>
+          </button>
         </div>
+
+        <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+      </div>
     </header>
 
-
-
-
-
     <main>
-        <article>
-
-            <!-- 
+      <article>
+        <!-- 
         - #HERO
       -->
 
-            <section class="hero" id="home">
-                <div class="container">
+        <section class="hero" id="home">
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle">Somos um Time de Analistas de Dados</p>
 
-                    <div class="hero-content">
+              <h2 class="h2 hero-title">
+                Projetamos dashboards e relatórios que otimizam resultados
+              </h2>
 
-                        <p class="hero-subtitle">Somos um Time de Analistas de Dados </p>
+              <p class="hero-text">
+                Desenvolvemos painéis simples e intuitivos que ajudam os
+                usuários a obter insights que impactam seus negócios com menos
+                esforço e tempo, graças a essas tecnologias.
+              </p>
 
-                        <h2 class="h2 hero-title">Projetamos dashboards e relatórios que otimizam resultados</h2>
+              <button
+                class="btn"
+                onclick="window.open('https://wa.me/5533998081882', '_blank')"
+              >
+                Saiba mais
+              </button>
+            </div>
 
-                        <p class="hero-text">
-                            Desenvolvemos painéis simples e intuitivos que ajudam os usuários a obter insights que impactam seus negócios com menos esforço e tempo, graças a essas tecnologias.
-                        </p>
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/hero-banner.png"
+                width="694"
+                height="529"
+                loading="lazy"
+                alt="hero-banner"
+                class="w-100 banner-animation"
+              />
+            </figure>
+          </div>
+        </section>
 
-                        <button class="btn" onclick="window.open('https://wa.me/5533998081882', '_blank')">Saiba mais</button>
-
-                    </div>
-
-                    <figure class="hero-banner">
-                        <img src="./assets/images/hero-banner.png" width="694" height="529" loading="lazy" alt="hero-banner" class="w-100 banner-animation">
-                    </figure>
-
-                </div>
-            </section>
-
-
-
-
-
-            <!-- 
+        <!-- 
         - #ABOUT
       -->
 
-            <section class="section about" id="about">
-                <div class="container">
+        <section class="section about" id="about">
+          <div class="container">
+            <figure class="about-banner">
+              <img
+                src="./assets/images/about-banner.png"
+                width="700"
+                height="532"
+                loading="lazy"
+                alt="about banner"
+                class="w-100 banner-animation"
+              />
+            </figure>
 
-                    <figure class="about-banner">
-                        <img src="./assets/images/about-banner.png" width="700" height="532" loading="lazy" alt="about banner" class="w-100 banner-animation">
-                    </figure>
+            <div class="about-content">
+              <h2 class="h2 section-title underline">Por que nosso time?</h2>
 
-                    <div class="about-content">
+              <p class="about-text">
+                Somos apaixonados por transformar dados em insights usando
+                soluções criativas e inovadoras. Estamos sempre nos atualizando
+                e aprendendo novas ferramentas e conceitos.
+              </p>
 
-                        <h2 class="h2 section-title underline">Por que nosso time?</h2>
+              <p class="about-text">
+                Temos experiência em diversos projetos e segmentos. Atendemos
+                empresas de pequeno a grande porte que precisam de soluções
+                customizadas e eficientes para gerenciar seus dados e tomar
+                decisões formais. Nos destacamos pela qualidade, agilidade,
+                flexibilidade e transparência. Valorizamos a confiança,
+                colaboração, ética e satisfação do cliente.
+              </p>
 
-                        <p class="about-text">
-                            Somos apaixonados por transformar dados em insights usando soluções criativas e inovadoras. Estamos sempre nos atualizando e aprendendo novas ferramentas e conceitos.
-                        </p>
+              <ul class="stats-list">
+                <li class="stats-card">
+                  <p class="h3 stats-title">+25</p>
 
-                        <p class="about-text">
-                            Temos experiência em diversos projetos e segmentos. Atendemos empresas de pequeno a grande porte que precisam de soluções customizadas e eficientes para gerenciar seus dados e tomar decisões formais. Nos destacamos pela qualidade, agilidade, flexibilidade
-                            e transparência. Valorizamos a confiança, colaboração, ética e satisfação do cliente.
-                        </p>
+                  <p class="stats-text">Clientes Satisfeitos</p>
+                </li>
 
-                        <ul class="stats-list">
+                <li class="stats-card">
+                  <p class="h3 stats-title">+100</p>
 
-                            <li class="stats-card">
-                                <p class="h3 stats-title">+25</p>
+                  <p class="stats-text">Projetos Finalizados</p>
+                </li>
 
-                                <p class="stats-text">Clientes Satisfeitos</p>
-                            </li>
+                <li class="stats-card">
+                  <p class="h3 stats-title">+15</p>
 
-                            <li class="stats-card">
-                                <p class="h3 stats-title">+100</p>
+                  <p class="stats-text">Anos de Experiência</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-                                <p class="stats-text">Projetos Finalizados</p>
-                            </li>
-
-                            <li class="stats-card">
-                                <p class="h3 stats-title">+15</p>
-
-                                <p class="stats-text">Anos de Experiência</p>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-            </section>
-
-
-
-
-
-            <!-- 
+        <!-- 
         - #SERVICE
       -->
 
-            <section class="section service" id="services">
-                <div class="container">
+        <section class="section service" id="services">
+          <div class="container">
+            <h2 class="h2 section-title underline">Nossas Especialidades</h2>
 
-                    <h2 class="h2 section-title underline">Nossas Especialidades</h2>
-
-                    <ul class="service-list">
-
-                        <li>
-                            <div class="service-card">
-
-                                <div class="card-icon">
-                                    <ion-icon name="telescope-outline"></ion-icon>
-                                </div>
-
-                                <h3 class="h3 title">Análise e Estratégia</h3>
-
-                                <p class="text">
-                                    Criação de insights que agregam valor e geram impacto para os seus projetos.
-                                </p>
-
-                                <button class="card-btn" aria-label="Show More">
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="service-card">
-
-                                <div class="card-icon">
-                                    <ion-icon name="desktop-outline"></ion-icon>
-                                </div>
-
-                                <h3 class="h3 title">Estatísticas profissionais</h3>
-
-                                <p class="text">
-                                    Relatórios de nível profissional, modernos e de alta qualidade.
-                                </p>
-
-                                <button class="card-btn" aria-label="Show More">
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="service-card">
-
-                                <div class="card-icon">
-                                    <ion-icon name="globe-outline"></ion-icon>
-                                </div>
-
-                                <h3 class="h3 title">Soluções Multiplataforma</h3>
-
-                                <p class="text">
-                                    Dashboards com layouts compatíveis com iOS e Android.
-                                </p>
-
-                                <button class="card-btn" aria-label="Show More">
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button>
-
-                            </div>
-                        </li>
-
-                    </ul>
-
+            <ul class="service-list">
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon name="telescope-outline"></ion-icon>
+                  </div>
+                  <h3 class="h3 title">Análise e Estratégia</h3>
+                  <p class="text">
+                    Criação de insights que agregam valor e geram impacto para
+                    os seus projetos.
+                  </p>
+                  <button class="card-btn" data-gallery="1">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </button>
                 </div>
-            </section>
+              </li>
 
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon name="desktop-outline"></ion-icon>
+                  </div>
+                  <h3 class="h3 title">Estatísticas profissionais</h3>
+                  <p class="text">
+                    Relatórios de nível profissional, modernos e de alta
+                    qualidade.
+                  </p>
+                  <button class="card-btn" data-gallery="2">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </button>
+                </div>
+              </li>
 
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon name="globe-outline"></ion-icon>
+                  </div>
+                  <h3 class="h3 title">Soluções Multiplataforma</h3>
+                  <p class="text">
+                    Dashboards com layouts compatíveis com iOS e Android.
+                  </p>
+                  <button class="card-btn" data-gallery="3">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
 
+        <!--  Modal único (global) -->
+        <div id="imageModal" class="modal">
+          <span class="close">&times;</span>
+          <div class="modal-content">
+            <img id="modalImg" src="" alt="" />
+            <div id="caption"></div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
 
-
-            <!-- 
+        <!-- 
         - #FEATURES
       -->
 
-            <section class="section features" id="features">
-                <div class="container">
+        <section class="section features" id="features">
+          <div class="container">
+            <h2 class="h2 section-title underline">Nossas Soluções</h2>
 
-                    <h2 class="h2 section-title underline">Nossas Soluções</h2>
+            <ul class="features-list">
+              <li>
+                <div class="features-card">
+                  <div class="icon">
+                    <ion-icon name="bulb-outline"></ion-icon>
+                  </div>
 
-                    <ul class="features-list">
+                  <div class="content">
+                    <h3 class="h3 title">Análise e Estratégia de Dados</h3>
 
-                        <li>
-                            <div class="features-card">
-
-                                <div class="icon">
-                                    <ion-icon name="bulb-outline"></ion-icon>
-                                </div>
-
-                                <div class="content">
-                                    <h3 class="h3 title">Análise e Estratégia de Dados</h3>
-
-                                    <p class="text">
-                                        Transformamos dados brutos em informações estratégicas, ajudando sua empresa a tomar decisões mais assertivas.
-                                    </p>
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="features-card">
-
-                                <div class="icon">
-                                    <ion-icon name="color-palette-outline"></ion-icon>
-                                </div>
-
-                                <div class="content">
-                                    <h3 class="h3 title">Dashboards Interativos</h3>
-
-                                    <p class="text">
-                                        Desenvolvemos dashboards dinâmicos e visuais no Power BI e QuickSight para acompanhamento em tempo real.
-                                    </p>
-                                </div>
-
-                            </div>
-                        </li>
-
-                    </ul>
-
-                    <figure class="features-banner">
-                        <img src="./assets/images/feautres-banner.png" width="369" height="318" loading="lazy" alt="Features Banner" class="w-100 banner-animation">
-                    </figure>
-
-                    <ul class="features-list">
-
-                        <li>
-                            <div class="features-card">
-
-                                <div class="icon">
-                                    <ion-icon name="code-slash-outline"></ion-icon>
-                                </div>
-
-                                <div class="content">
-                                    <h3 class="h3 title">Automação de Processos</h3>
-
-                                    <p class="text">
-                                        Implementamos automações inteligentes com n8n para economizar tempo e reduzir erros operacionais.
-                                    </p>
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="features-card">
-
-                                <div class="icon">
-                                    <ion-icon name="rocket-outline"></ion-icon>
-                                </div>
-
-                                <div class="content">
-                                    <h3 class="h3 title">Monitoramento e Otimização Contínua</h3>
-
-                                    <p class="text">
-                                        Acompanhamos a performance dos seus dados e processos, ajustando para manter alta eficiência.
-                                    </p>
-                                </div>
-
-                            </div>
-                        </li>
-
-                    </ul>
-
+                    <p class="text">
+                      Transformamos dados brutos em informações estratégicas,
+                      ajudando sua empresa a tomar decisões mais assertivas.
+                    </p>
+                  </div>
                 </div>
-            </section>
+              </li>
 
+              <li>
+                <div class="features-card">
+                  <div class="icon">
+                    <ion-icon name="color-palette-outline"></ion-icon>
+                  </div>
 
+                  <div class="content">
+                    <h3 class="h3 title">Dashboards Interativos</h3>
 
+                    <p class="text">
+                      Desenvolvemos dashboards dinâmicos e visuais no Power BI e
+                      QuickSight para acompanhamento em tempo real.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
 
+            <figure class="features-banner">
+              <img
+                src="./assets/images/feautres-banner.png"
+                width="369"
+                height="318"
+                loading="lazy"
+                alt="Features Banner"
+                class="w-100 banner-animation"
+              />
+            </figure>
 
-            <!-- 
+            <ul class="features-list">
+              <li>
+                <div class="features-card">
+                  <div class="icon">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                  </div>
+
+                  <div class="content">
+                    <h3 class="h3 title">Automação de Processos</h3>
+
+                    <p class="text">
+                      Implementamos automações inteligentes com n8n para
+                      economizar tempo e reduzir erros operacionais.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="features-card">
+                  <div class="icon">
+                    <ion-icon name="rocket-outline"></ion-icon>
+                  </div>
+
+                  <div class="content">
+                    <h3 class="h3 title">
+                      Monitoramento e Otimização Contínua
+                    </h3>
+
+                    <p class="text">
+                      Acompanhamos a performance dos seus dados e processos,
+                      ajustando para manter alta eficiência.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
         - #BLOG
       -->
 
-            <section class="section blog" id="blog">
-                <div class="container">
-                    <h2 class="h2 section-title underline">Blog & Novidades</h2>
+        <section class="section blog" id="blog">
+          <div class="container">
+            <h2 class="h2 section-title underline">Blog & Novidades</h2>
 
-                    <ul class="blog-list">
-                        <li>
-                            <div class="blog-card">
-
-                                <figure class="banner">
-                                    <a href="#" class="popup-image">
-                                        <img src="./assets/images/blog-1.jpg" width="750" height="350" loading="lazy" alt="Por que conectar BI ao banco transacional pode ser um erro?" class="img-cover">
-                                    </a>
-                                </figure>
-
-                                <div class="content">
-                                    <h3 class="h3 title">
-                                        <a href="#">
-                                Por que conectar BI ao banco transacional pode ser um erro?
-                            </a>
-                                    </h3>
-
-                                    <p class="text">
-                                        Nem sempre conectar direto ao OLTP é um problema… mas quando é, pode sair bem caro. No modelo OLTP, a prioridade é registrar e processar as operações rapidamente, não lidar com análises pesadas.
-                                    </p>
-
-                                    <div class="meta">
-                                        <div class="publish-date">
-                                            <ion-icon name="time-outline"></ion-icon>
-                                            <time datetime="2025-07-10">10 de julho de 2025</time>
-                                        </div>
-
-                                        <button class="comment" aria-label="Comment">
-                                <ion-icon name="chatbubble-outline"></ion-icon>
-                                <data value="37">37</data>
-                            </button>
-
-                                        <button class="share" aria-label="Share">
-                                <ion-icon name="share-social-outline"></ion-icon>
-                            </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="blog-card">
-
-                                <figure class="banner">
-                                    <a href="#" class="popup-image">
-                                        <img src="./assets/images/blog-2.jpg" width="750" height="350" loading="lazy" alt="Documentação de Dashboards" class="img-cover">
-                                    </a>
-                                </figure>
-
-                                <div class="content">
-
-                                    <h3 class="h3 title">
-                                        <a href="#">
-                      Documentação de Dashboards.
+            <ul class="blog-list">
+              <li>
+                <div class="blog-card">
+                  <figure class="banner">
+                    <a href="#" class="popup-image">
+                      <img
+                        src="./assets/images/blog-1.jpg"
+                        width="750"
+                        height="350"
+                        loading="lazy"
+                        alt="Por que conectar BI ao banco transacional pode ser um erro?"
+                        class="img-cover"
+                      />
                     </a>
-                                    </h3>
+                  </figure>
 
-                                    <p class="text">
-                                        Já perdeu horas tentando entender um dashboard sem nenhuma documentação? Pois é. Eu também. E foi aí que percebi: a documentação não é um extra. Ela é parte essencial da entrega.
-                                    </p>
+                  <div class="content">
+                    <h3 class="h3 title">
+                      <a href="#">
+                        Por que conectar BI ao banco transacional pode ser um
+                        erro?
+                      </a>
+                    </h3>
 
-                                    <div class="meta">
+                    <p class="text">
+                      Nem sempre conectar direto ao OLTP é um problema… mas
+                      quando é, pode sair bem caro. No modelo OLTP, a prioridade
+                      é registrar e processar as operações rapidamente, não
+                      lidar com análises pesadas.
+                    </p>
 
-                                        <div class="publish-date">
-                                            <ion-icon name="time-outline"></ion-icon>
+                    <div class="meta">
+                      <div class="publish-date">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <time datetime="2025-07-10">10 de julho de 2025</time>
+                      </div>
 
-                                            <time datetime="2025-05-13">13 de maio de 2025</time>
-                                        </div>
+                      <button class="comment" aria-label="Comment">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+                        <data value="37">37</data>
+                      </button>
 
-                                        <button class="comment" aria-label="Comment">
-                      <ion-icon name="chatbubble-outline"></ion-icon>
-
-                      <data value="262">262</data>
-                    </button>
-
-                                        <button class="share" aria-label="Share">
-                      <ion-icon name="share-social-outline"></ion-icon>
-                    </button>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="blog-card">
-
-                                <figure class="banner">
-                                    <a href="#" class="popup-image">
-                                        <img src="./assets/images/blog-3.jpg" width="750" height="350" loading="lazy" alt="Levantamento de requisitos." class="img-cover">
-                                    </a>
-                                </figure>
-
-                                <div class="content">
-
-                                    <h3 class="h3 title">
-                                        <a href="#">
-                      Levantamento de requisitos
-                    </a>
-                                    </h3>
-
-                                    <p class="text">
-                                        Muitas vezes o problema não está no dashboard. Está no levantamento de requisitos. Antes de construir qualquer dashboard, eu uso um roteiro de perguntas que me ajuda a entender o contexto, o público e as necessidades reais do negócio.
-                                    </p>
-
-                                    <div class="meta">
-
-                                        <div class="publish-date">
-                                            <ion-icon name="time-outline"></ion-icon>
-
-                                            <time datetime="2025-03-12">12 de março de 2025</time>
-                                        </div>
-
-                                        <button class="comment" aria-label="Comment">
-                      <ion-icon name="chatbubble-outline"></ion-icon>
-
-                      <data value="537">537</data>
-                    </button>
-
-                                        <button class="share" aria-label="Share">
-                      <ion-icon name="share-social-outline"></ion-icon>
-                    </button>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="blog-card">
-
-                                <figure class="banner">
-                                    <a href="#" class="popup-image">
-                                        <img src="./assets/images/blog-4.jpg" width="750" height="350" loading="lazy" alt="Etapas de criação de Relatórios" class="img-cover">
-                                    </a>
-                                </figure>
-
-                                <div class="content">
-
-                                    <h3 class="h3 title">
-                                        <a href="#">
-                     Etapas de criação de Relatórios.
-                    </a>
-                                    </h3>
-
-                                    <p class="text">
-                                        Desde a entrevista com o solicitante até o monitoramento pós-entrega, cada etapa tem um papel fundamental. Com o tempo, entendi que pular etapas não acelera o processo, na verdade, pode gerar mais retrabalhos lá na frente.
-                                    </p>
-
-                                    <div class="meta">
-
-                                        <div class="publish-date">
-                                            <ion-icon name="time-outline"></ion-icon>
-
-                                            <time datetime="2025-01-15">15 de janeiro de 2025</time>
-                                        </div>
-
-                                        <button class="comment" aria-label="Comment">
-                      <ion-icon name="chatbubble-outline"></ion-icon>
-
-                      <data value="961">961</data>
-                    </button>
-
-                                        <button class="share" aria-label="Share">
-                      <ion-icon name="share-social-outline"></ion-icon>
-                    </button>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                    </ul>
-
+                      <button class="share" aria-label="Share">
+                        <ion-icon name="share-social-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
                 </div>
-            </section>
-            <!-- Modal de Imagem -->
-            <div id="imageModal" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="modalImg">
-                <div id="caption"></div>
-            </div>
-        </article>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure class="banner">
+                    <a href="#" class="popup-image">
+                      <img
+                        src="./assets/images/blog-2.jpg"
+                        width="750"
+                        height="350"
+                        loading="lazy"
+                        alt="Documentação de Dashboards"
+                        class="img-cover"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="content">
+                    <h3 class="h3 title">
+                      <a href="#"> Documentação de Dashboards. </a>
+                    </h3>
+
+                    <p class="text">
+                      Já perdeu horas tentando entender um dashboard sem nenhuma
+                      documentação? Pois é. Eu também. E foi aí que percebi: a
+                      documentação não é um extra. Ela é parte essencial da
+                      entrega.
+                    </p>
+
+                    <div class="meta">
+                      <div class="publish-date">
+                        <ion-icon name="time-outline"></ion-icon>
+
+                        <time datetime="2025-05-13">13 de maio de 2025</time>
+                      </div>
+
+                      <button class="comment" aria-label="Comment">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+
+                        <data value="262">262</data>
+                      </button>
+
+                      <button class="share" aria-label="Share">
+                        <ion-icon name="share-social-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure class="banner">
+                    <a href="#" class="popup-image">
+                      <img
+                        src="./assets/images/blog-3.jpg"
+                        width="750"
+                        height="350"
+                        loading="lazy"
+                        alt="Levantamento de requisitos."
+                        class="img-cover"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="content">
+                    <h3 class="h3 title">
+                      <a href="#"> Levantamento de requisitos </a>
+                    </h3>
+
+                    <p class="text">
+                      Muitas vezes o problema não está no dashboard. Está no
+                      levantamento de requisitos. Antes de construir qualquer
+                      dashboard, eu uso um roteiro de perguntas que me ajuda a
+                      entender o contexto, o público e as necessidades reais do
+                      negócio.
+                    </p>
+
+                    <div class="meta">
+                      <div class="publish-date">
+                        <ion-icon name="time-outline"></ion-icon>
+
+                        <time datetime="2025-03-12">12 de março de 2025</time>
+                      </div>
+
+                      <button class="comment" aria-label="Comment">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+
+                        <data value="537">537</data>
+                      </button>
+
+                      <button class="share" aria-label="Share">
+                        <ion-icon name="share-social-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure class="banner">
+                    <a href="#" class="popup-image">
+                      <img
+                        src="./assets/images/blog-4.jpg"
+                        width="750"
+                        height="350"
+                        loading="lazy"
+                        alt="Etapas de criação de Relatórios"
+                        class="img-cover"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="content">
+                    <h3 class="h3 title">
+                      <a href="#"> Etapas de criação de Relatórios. </a>
+                    </h3>
+
+                    <p class="text">
+                      Desde a entrevista com o solicitante até o monitoramento
+                      pós-entrega, cada etapa tem um papel fundamental. Com o
+                      tempo, entendi que pular etapas não acelera o processo, na
+                      verdade, pode gerar mais retrabalhos lá na frente.
+                    </p>
+
+                    <div class="meta">
+                      <div class="publish-date">
+                        <ion-icon name="time-outline"></ion-icon>
+
+                        <time datetime="2025-01-15">15 de janeiro de 2025</time>
+                      </div>
+
+                      <button class="comment" aria-label="Comment">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+
+                        <data value="961">961</data>
+                      </button>
+
+                      <button class="share" aria-label="Share">
+                        <ion-icon name="share-social-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- Modal de Imagem -->
+        <div id="imageModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="modalImg" />
+          <div id="caption"></div>
+        </div>
+      </article>
     </main>
-
-
-
-
 
     <!-- 
     - #FOOTER
   -->
 
     <footer class="footer">
+      <div class="footer-top section">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">Elite Data</a>
 
-        <div class="footer-top section">
-            <div class="container">
+            <p class="text">Simplifique seus dados e expanda seus negócios.</p>
 
-                <div class="footer-brand">
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
 
-                    <a href="#" class="logo">Elite Data</a>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
 
-                    <p class="text">
-                        Simplifique seus dados e expanda seus negócios.
-                    </p>
+              <li>
+                <a
+                  href="https://wa.me/5533998081882"
+                  class="social-link"
+                  target="_blank"
+                >
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-                    <ul class="social-list">
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Nossos links</p>
+            </li>
 
-                        <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-facebook"></ion-icon>
-                            </a>
-                        </li>
+            <li>
+              <a href="#" class="footer-link">Início</a>
+            </li>
 
-                        <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-instagram"></ion-icon>
-                            </a>
-                        </li>
+            <li>
+              <a href="#about" class="footer-link">Sobre nós</a>
+            </li>
 
-                        <li>
-                            <a href="https://wa.me/5533998081882" class="social-link" target="_blank">
-                                <ion-icon name="logo-whatsapp"></ion-icon>
-                            </a>
-                        </li>
+            <li>
+              <a href="#services" class="footer-link">Serviços</a>
+            </li>
 
-                    </ul>
-
-                </div>
-
-                <ul class="footer-list">
-
-                    <li>
-                        <p class="footer-list-title">Nossos links</p>
-                    </li>
-
-                    <li>
-                        <a href="#" class="footer-link">Início</a>
-                    </li>
-
-                    <li>
-                        <a href="#about" class="footer-link">Sobre nós</a>
-                    </li>
-
-                    <li>
-                        <a href="#services" class="footer-link">Serviços</a>
-                    </li>
-
-                    <!--   <li>
+            <!--   <li>
                         <a href="#" class="footer-link">Time</a>
                     </li>
 
                     <li>
                         <a href="#blog" class="footer-link">Blog</a>
                     </li>-->
+          </ul>
 
-                </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Nossos Serviços</p>
+            </li>
 
-                <ul class="footer-list">
+            <li>
+              <a href="#" class="footer-link-srv" data-gallery="2">Dashboards</a>
+            </li>
 
-                    <li>
-                        <p class="footer-list-title">Nossos Serviços</p>
-                    </li>
+            <li>
+              <a href="#" class="footer-link-srv" data-gallery="1">Relatórios</a>
+            </li>
 
-                    <li>
-                        <a href="#" class="footer-link">Dashboards</a>
-                    </li>
+            <li>
+              <a href="#" class="footer-link-srv" data-gallery="3">Automações</a>
+            </li>
 
-                    <li>
-                        <a href="#" class="footer-link">Relatórios</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="footer-link">Automações</a>
-                    </li>
-
-                    <!-- <li>
+            <!-- <li>
                         <a href="#" class="footer-link">Integrações</a>
                     </li>
 
                     <li>
                         <a href="#" class="footer-link">App Design</a>
                     </li>-->
+          </ul>
 
-                </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Outros links</p>
+            </li>
 
-                <ul class="footer-list">
+            <li>
+              <a href="faq.html" class="footer-link">FAQ</a>
+            </li>
 
-                    <li>
-                        <p class="footer-list-title">Outros links</p>
-                    </li>
-
-                    <li>
-                        <a href="faq.html" class="footer-link">FAQ</a>
-                    </li>
-
-                    <!-- <li>
+            <!-- <li>
                         <a href="#" class="footer-link">Portfolio</a>
                     </li>-->
 
-                    <li>
-                        <a href="privacy.html" class="footer-link">Políticas de Privacidade</a>
-                    </li>
+            <li>
+              <a href="privacy.html" class="footer-link"
+                >Políticas de Privacidade</a
+              >
+            </li>
 
-                    <li>
-                        <a href="terms.html" class="footer-link">Termos de Uso</a>
-                    </li>
+            <li>
+              <a href="terms.html" class="footer-link">Termos de Uso</a>
+            </li>
 
-                    <!--   <li>
+            <!--   <li>
                         <a href="cookies.html" class="footer-link">Cookies</a>
                     </li> -->
+          </ul>
 
-                </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Fale conosco</p>
+            </li>
 
-                <ul class="footer-list">
+            <li class="footer-item">
+              <div class="footer-item-icon">
+                <ion-icon name="call"></ion-icon>
+              </div>
 
-                    <li>
-                        <p class="footer-list-title">Fale conosco</p>
-                    </li>
+              <div>
+                <a href="tel:+5533998081882" class="footer-item-link"
+                  >+55 33 99808-1882</a
+                >
+              </div>
+            </li>
 
-                    <li class="footer-item">
+            <li class="footer-item">
+              <div class="footer-item-icon">
+                <ion-icon name="mail"></ion-icon>
+              </div>
 
-                        <div class="footer-item-icon">
-                            <ion-icon name="call"></ion-icon>
-                        </div>
+              <div>
+                <a href="mailto:info@Elite Data.com" class="footer-item-link"
+                  >info@EliteData.com</a
+                >
+              </div>
+            </li>
 
-                        <div>
-                            <a href="tel:+5533998081882" class="footer-item-link">+55 33 99808-1882</a>
+            <li class="footer-item">
+              <div class="footer-item-icon">
+                <ion-icon name="location"></ion-icon>
+              </div>
 
-                        </div>
-
-                    </li>
-
-                    <li class="footer-item">
-
-                        <div class="footer-item-icon">
-                            <ion-icon name="mail"></ion-icon>
-                        </div>
-
-                        <div>
-                            <a href="mailto:info@Elite Data.com" class="footer-item-link">info@EliteData.com</a>
-
-                        </div>
-
-                    </li>
-
-                    <li class="footer-item">
-
-                        <div class="footer-item-icon">
-                            <ion-icon name="location"></ion-icon>
-                        </div>
-
-                        <address class="footer-item-link">
-              Belo Horizonte, MG, Brasil
-            </address>
-
-                    </li>
-
-                </ul>
-
-            </div>
+              <address class="footer-item-link">
+                Belo Horizonte, MG, Brasil
+              </address>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <div class="footer-bottom">
-            <p class="copyright">
-                &copy; 2025 <a href="#" class="copyright-link">TTT Company Inc</a>. All Right Reserved
-            </p>
-        </div>
-
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2025 <a href="#" class="copyright-link">TTT Company Inc</a>.
+          All Right Reserved
+        </p>
+      </div>
     </footer>
-
-
-
-
 
     <!-- 
     - #GO TO TOP
   -->
 
-    <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
-        <ion-icon name="arrow-up-outline"></ion-icon>
+    <a href="#top" class="go-top active" aria-label="Go To Top" data-go-top>
+      <ion-icon name="arrow-up-outline"></ion-icon>
     </a>
-
-
-
-
 
     <!-- 
     - custom js link
@@ -786,10 +772,13 @@
     <!-- 
     - ionicon link
   -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
